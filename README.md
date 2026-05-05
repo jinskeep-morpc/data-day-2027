@@ -16,5 +16,46 @@ All relevant materials will be organized in their respective folders.
 
 For more information regarding Data Day, please email jinskeep@morpc.org
 
+## TODO:
+
+### Logistics and Venue
+- [ ] Select a data for the event.
+- [ ] Select and book a venue for the event.
+- [ ] Select a theme for the event.
+- [ ] Establish internal MORPC meetings with involved staff.
+
+### Champions
+- [ ] Set up Data Day Champions group and reach out to prospective champions.
+- [ ] Develop schedule of asks and draft emails.
+- [ ] Brainstorm materials and work on promotions for champions.
+
+### Breakouts
+- [ ] Complete CFP for breakouts and send to email list. 
+- [ ] Promote CFP
+- [ ] Collect and vet breakouts, Select and determine schedule.
+- [ ] Notify selected speakers.
+- [ ] Collect slides.
+- [ ] Send final details to speakers.
+
+### Keynotes
+- [ ] Recruit keynotes. 
+- [ ] Initial meeting and discussion of presentation.
+- [ ] Get headshot and bio.
+- [ ] Final meeting.
+
+### Sponsors
+- [ ] Collect list of previous sponsors
+- [ ] Collect list of potential sponsors
+- [ ] Integrate with MORPC wide sponsor asks
+- [ ] Select sponsorship tiers and update brochure
+- [ ] Brainstorm opportunities for more sponsor engagement
+
+### Registration
+- [ ] Collect email list for registration blast
+- [ ] Open Registration
+
+
+
+
 
 
