@@ -11,6 +11,9 @@ No. There's no standing committee and no recurring meetings. Each way to help is
 **Why be a Champion?**
 You'll help shape the region's premier data event, grow your network across local governments, nonprofits, educational institutions, and businesses, and get an inside look at the work happening across Central Ohio. It's also a meaningful way to give back to the data community in our fifth-anniversary year.
 
+**How are Champions recognized?**
+We credit Champions in the event program, list them on the Data Day website, and thank them from the stage at the event. Most of all, we close the loop personally — telling you the impact your contribution had.
+
 ---
 
 ## Time and commitment
@@ -55,10 +58,26 @@ Every ask comes with what you need — templates, links, talking points, and a s
 
 ---
 
+## Ground rules & good practice
+
+**What if I have a personal or business stake in a decision?**
+Just flag it and hand it to staff. If you, your employer, or a close contact could benefit from a speaker, sponsor, or vendor choice — for example, your firm wants to sponsor or present — you're still welcome to make the introduction, but you never select, price, or negotiate. Staff make every call, which keeps you out of any conflict of interest.
+
+**Can I post about Data Day on social media?**
+Please do — amplification is one of the most valuable things you can do. Share from your own account, in your own voice, using the ready-made copy and graphics we provide. A few asks: don't speak on behalf of MORPC or Data Day, don't create new logos or alter our graphics, and don't announce anything not yet public (speakers, sponsors, dates) until we've released it. When in doubt, ask and we'll get you the green light.
+
+**I'm a public employee — do I need my supervisor's okay?**
+If you'd be doing Champion work on work time or in any way representing your agency, please clear it with your supervisor first. We're happy to provide a short description of the role for you to share — just ask.
+
+---
+
 ## Logistics
 
 **Do I need to attend Data Day?**
 We hope you will — it's the best part! Most asks don't require attendance, though event-day roles like facilitating a session naturally do.
+
+**Do Champions get free registration?**
+Registration and the Champion role are separate — Champions register like everyone else. We keep Data Day's registration accessible, and we recognize Champion contributions in the program, on the website, and at the event.
 
 **How do I sign up?**
 Let us know which ways you'd like to help at **[sign-up link]**. We'll follow up with the details and timing for each.
