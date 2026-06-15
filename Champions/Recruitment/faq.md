@@ -14,8 +14,6 @@ You'll help shape the region's premier data event, grow your network across loca
 **How are Champions recognized?**
 We credit Champions in the event program, list them on the Data Day website, and thank them from the stage at the event. Most of all, we close the loop personally — telling you the impact your contribution had.
 
----
-
 ## Time and commitment
 
 **How much time does this really take?**
@@ -30,8 +28,6 @@ Asks are spread across the planning year — speaker and sponsor connections in 
 **What if I sign up and then can't follow through?**
 That's completely fine. These are voluntary, low-pressure asks. If something comes up, just let us know and we'll cover it. We'd rather you take on only what you can comfortably do.
 
----
-
 ## Who can help
 
 **Do I need to be a data expert or technically skilled?**
@@ -39,8 +35,6 @@ No. Champions come from all backgrounds and skill levels. What helps most is a g
 
 **Who can be a Champion?**
 Anyone connected to Central Ohio's data community is welcome — people in local government, nonprofits, educational institutions, and civic-minded businesses, including past Data Day speakers and attendees.
-
----
 
 ## The asks themselves
 
@@ -56,8 +50,6 @@ Wonderful — just hand it to our staff lead and we'll take it from there. That 
 **What if I'm not sure how to do a task?**
 Every ask comes with what you need — templates, links, talking points, and a staff contact. If you're ever unsure, just reach out and we'll walk you through it.
 
----
-
 ## Ground rules & good practice
 
 **What if I have a personal or business stake in a decision?**
@@ -68,8 +60,6 @@ Please do — amplification is one of the most valuable things you can do. Share
 
 **I'm a public employee — do I need my supervisor's okay?**
 If you'd be doing Champion work on work time or in any way representing your agency, please clear it with your supervisor first. We're happy to provide a short description of the role for you to share — just ask.
-
----
 
 ## Logistics
 
@@ -84,7 +74,5 @@ Let us know which ways you'd like to help at **[sign-up link]**. We'll follow up
 
 **Who do I contact with questions?**
 Reach out to Jordan Inskeep at jinskeep@morpc.org anytime — before, during, or after you sign up.
-
----
 
 *Thank you for helping us advance the region's data community as we mark five years of Data Day.*

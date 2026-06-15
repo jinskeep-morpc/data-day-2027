@@ -1,24 +1,21 @@
-Subject: Help advance Central Ohio's data community — become a Data Day Champion
+Subject: Become a Data Day Champion
 
 Dear [First Name],
 
-The Mid-Ohio Regional Planning Commission and the Regional Data Roundtable share a vision: to make Central Ohio a leader in using data to improve the quality of life for all residents. Data Day, our signature data event, is one of the clearest expressions of that vision — and on Tuesday, February 16, 2027, we will convene the region's data creators, innovators, analysts, and end users for its fifth year.
+On Tuesday, February 16, 2027, MORPC and the Regional Data Roundtable will host the fifth annual Data Day — Central Ohio's signature event for the people who create, analyze, and use data. We'd like your help to make it happen.
 
-This year, we invite you to help shape it as a Data Day Champion.
+Data Day Champions are members of our data community who pitch in at a few key moments during the year. There's no committee and no recurring meetings — just a handful of specific, time-bound asks you choose from based on your interests and time. Champions help:
 
-Collaboration among local governments, nonprofits, educational institutions, and civic-minded businesses is what makes Data Day possible. Champions are members of that community who lend their time and networks at a few key moments across the planning year. The role is intentionally light: rather than a standing committee or recurring meetings, it is a set of specific, time-bound contributions you choose from based on your interests and availability.
-
-Champions help to:
-• Identify and connect us with prospective keynote and session speakers (early fall)
+• Connect us with potential keynote and session speakers (early fall)
 • Promote the Call for Session Proposals across their networks (late September–October)
-• Encourage registration throughout the region (winter)
+• Encourage registration around the region (winter)
 • Facilitate a session or welcome attendees on event day (February 16)
 
-Most contributions require only an hour or two and occur at predictable points in the calendar, so you may take part in as many or as few as your schedule allows. In doing so, you will help foster the partnerships and shared learning that advance data practice across the Central Ohio region — and strengthen your own connections within it.
+Most asks take an hour or two, so you can take on as many or as few as you like. In return, you'll help strengthen the partnerships and shared learning that move data practice forward across the region — and grow your own connections within it. For more on each specific ask, see the attached Ways to Help.
 
-To join, please sign up here: [sign-up link], or reply to this message, by [response date]. We will follow with a brief overview of the contributions and their timing.
+Interested? Sign up here: [sign-up link], or just reply, by [response date]. We'll follow up with the details and timing. For more about the Data Day Champions program, see the attached FAQ or email jinskeep@morpc.org.
 
-Thank you for helping us advance the region's data community as we mark five years of Data Day.
+Thank you for helping us mark five years of Data Day.
 
 Sincerely,
 [Your Name]

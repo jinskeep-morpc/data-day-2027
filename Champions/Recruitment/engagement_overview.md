@@ -12,8 +12,6 @@ A few things to know up front:
 
 Below are five ways to help.
 
----
-
 ## 1. Connect us with potential keynote speakers
 
 **What it is:** Help us find keynote speakers who fit the 2027 theme and will draw a crowd. You're a scout and a connector — you surface names and open doors where you have a relationship.
@@ -27,8 +25,6 @@ Below are five ways to help.
 **Time:** About an hour, plus a short intro email if you make one.  
 **What you'll have:** The theme and a short list of what makes a strong Data Day keynote, a simple suggestion form, and an introduction template you can copy.  
 
----
-
 ## 2. Share the Call for Session Proposals and recruit speakers
 
 **What it is:** Help us fill the program with great breakout sessions by spreading the Call for Session Proposals (CFP) and personally encouraging strong potential presenters to submit.
@@ -41,8 +37,6 @@ Below are five ways to help.
 **When:** Late September through early November — about a six-week window.  
 **Time:** An hour or two, spread across a few nudges.  
 **What you'll have:** The CFP link, a ready-made promo slide and social graphic with suggested copy, a short "why present at Data Day" blurb, and the key dates.  
-
----
 
 ## 3. Help solicit sponsors
 
@@ -58,8 +52,6 @@ Below are five ways to help.
 **Time:** As little as one introduction.  
 **What you'll have:** The sponsorship brochure, a one-line summary of the tiers and benefits, an introduction template, and our staff lead's contact.  
 
----
-
 ## 4. Encourage registration
 
 **What it is:** Once registration opens, help us fill the room by inviting your network and your colleagues.
@@ -74,8 +66,6 @@ Below are five ways to help.
 **Time:** An hour or so, spread across a few shares.  
 **What you'll have:** The registration link, ready-to-use email and social copy with graphics for each moment, the published agenda, and the headline reasons to attend.  
 
----
-
 ## 5. Facilitate a session or take a day-of role
 
 **What it is:** Help the event run smoothly. Facilitating a breakout session is the anchor role, and there are other ways to pitch in too.
@@ -89,8 +79,6 @@ Below are five ways to help.
 **When:** Roles are assigned in January; facilitators connect with their speaker in early February; everything happens on event day.
 **Time:** A short prep touchpoint plus your time on February 16.
 **What you'll have:** Your assignment, a one-page facilitator cheat sheet (intro template, time cues, sample Q&A prompts, and who to call for AV), the run-of-show, speaker bios, pre-loaded slides, and a day-of contact list.
-
----
 
 ## Ready to help?
 
