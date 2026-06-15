@@ -28,9 +28,10 @@ commitments; firm up exact dates as the cycle progresses.
   - [ ] Internal Data Day team meeting — Sep 2026
   - [ ] Internal Data Day team meeting — Nov 2026
   - [ ] Internal Data Day team meeting — Jan 2027
+  - [ ] Internal Data Day team meeting — Feb 2027
 - [ ] Provide Data Day updates at quarterly RDR meetings
-  - [ ] RDR Q3 update — Aug 2026
-  - [ ] RDR Q4 update — Nov 2026
+  - [ ] RDR Q3 update — Jul 2026
+  - [ ] RDR Q4 update — Oct 2026
   - [ ] RDR Q1 update — Feb 2027
 - [ ] Maintain ongoing planning, documentation, and timeline upkeep
 
@@ -40,7 +41,6 @@ commitments; firm up exact dates as the cycle progresses.
   - [x] Select a venue — **Ohio State University, Vitria on the Square, 14 E. 15th Ave., Columbus, OH 43201**
   - [ ] Book the venue
 - [ ] Select a theme for the event _(target: Sep 2026 — gates the CFP, keynotes, and marketing)_
-- [ ] Establish internal MORPC meetings with involved staff (Data, CE, Events, IT)
 - [ ] Prepare day-of logistics _(after agenda + registration are set)_
   - [ ] Order event signage _(early Feb 2027)_
   - [ ] Build slides for breaks, session intros, and keynote intros _(Feb 2027)_
@@ -49,10 +49,7 @@ commitments; firm up exact dates as the cycle progresses.
   - [ ] Set up registration / name tags _(event day)_
 
 ### Champions
-_Replaces the retired monthly Working Group. Boundary principle: Champions connect, amplify,
-and host; MORPC owns decisions, money, and commitments. Every ask follows the kit-before-ask
-gate — never send an ask before its resource kit exists._
-- [ ] Stand up the Champions program
+- [ ] Stand up the Champions program _(Jul 2026)_
   - [ ] Name a Champion Coordinator and the deliberative core (RDR / small steering group) _(Jul 2026)_
   - [ ] Recruit and onboard a diverse Champion pool — broad open call + targeted asks _(Jul–Aug 2026)_
   - [ ] Build the sign-up form with the checkbox menu of the five asks _(Jul 2026)_
@@ -79,6 +76,7 @@ gate — never send an ask before its resource kit exists._
 - [ ] Communicate final details — confirm topic/session, send panel questions, collect slides _(Jan 2027)_
 
 ### Breakouts
+- [ ] Explore options for lightning rounds and shorter breakout sessions _(Aug 2026)_
 - [ ] Prepare the Call for Proposals _(after theme is set)_
   - [ ] Update/finalize the call for session proposals _(Sep 2026)_
   - [ ] Convert the CFP to an online form _(Oct 2026)_
@@ -93,7 +91,7 @@ gate — never send an ask before its resource kit exists._
   - [ ] Vet and select sessions _(Dec 2026)_
   - [ ] Confirm/notify selected session speakers _(Dec 2026)_
 - [ ] Build the agenda and materials
-  - [ ] Establish tracks and finalize the agenda / session schedule _(Jan 2027)_
+  - [ ] Finalize the agenda / session schedule _(Jan 2027)_
   - [ ] Update the website with the agenda _(Jan 2027)_
   - [ ] Collect session slide decks _(Jan 2027)_
   - [ ] Design/print brochures _(early Feb 2027)_
