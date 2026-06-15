@@ -16,46 +16,98 @@ All relevant materials will be organized in their respective folders.
 
 For more information regarding Data Day, please email jinskeep@morpc.org
 
-## TODO:
+## Master timeline / TODO
+
+This task list is the working master timeline for Data Day 2027. It is adapted from the
+2026 cycle (archived in `Archive/master_timeline.xlsx`) and shifted to the **Tuesday,
+February 16, 2027** event date. Target months are planning guides, not hard commitments;
+firm up exact dates as the cycle progresses. Note the major structural change for 2027:
+**the monthly Working Group is retired and replaced by the Data Day Champions program**
+(see the Champions timeline below).
+
+### Meetings & Planning
+- [ ] Hold recurring internal Data Day team meetings (~monthly: Jul, Sep, Nov 2026; Jan 2027)
+- [ ] Provide Data Day updates at quarterly RDR meetings (Q3 Aug, Q4 Nov 2026, Q1 Feb 2027)
+- [ ] Maintain ongoing planning, documentation, and timeline upkeep
 
 ### Logistics and Venue
-- [ ] Select a data for the event.
-- [ ] Select and book a venue for the event.
-- [ ] Select a theme for the event.
-- [ ] Establish internal MORPC meetings with involved staff.
+- [x] Select a date for the event — **Tue, Feb 16, 2027**
+- [ ] Finalize and book the venue _(target: complete — CONFIRM CSCC Workforce Development Center)_
+- [ ] Select a theme for the event _(target: Sep 2026 — gates the CFP, keynotes, and marketing)_
+- [ ] Establish internal MORPC meetings with involved staff (Data, CE, Events, IT)
+- [ ] Prepare day-of logistics _(after agenda + registration are set)_
+  - [ ] Order event signage _(early Feb 2027)_
+  - [ ] Build slides for breaks, session intros, and keynote intros _(Feb 2027)_
+  - [ ] Stage laptops for session rooms, loaded with slides _(Feb 14, 2027)_
+  - [ ] Finalize catering _(by Jan 2027)_
+  - [ ] Set up registration / name tags _(event day)_
 
 ### Champions
-- [ ] Set up Data Day Champions group and reach out to prospective champions.
-- [ ] Develop schedule of asks and draft emails.
-- [ ] Brainstorm materials and work on promotions for champions.
-
-### Breakouts
-- [ ] Complete CFP for breakouts and send to email list. 
-- [ ] Promote CFP
-- [ ] Collect and vet breakouts, Select and determine schedule.
-- [ ] Notify selected speakers.
-- [ ] Collect slides.
-- [ ] Send final details to speakers.
+_Replaces the retired monthly Working Group. Boundary principle: Champions connect, amplify,
+and host; MORPC owns decisions, money, and commitments. Every ask follows the kit-before-ask
+gate — never send an ask before its resource kit exists._
+- [ ] Stand up the Champions program
+  - [ ] Name a Champion Coordinator and the deliberative core (RDR / small steering group) _(Jul 2026)_
+  - [ ] Recruit and onboard a diverse Champion pool — broad open call + targeted asks _(Jul–Aug 2026)_
+  - [ ] Build the sign-up form with the checkbox menu of the five asks _(Jul 2026)_
+- [ ] Build resource kits _(kit-before-ask gate)_
+  - [ ] Keynote criteria one-pager + "suggest a keynote" form _(Aug 2026)_
+  - [ ] Sponsorship brochure + one-line tier/benefit summary _(Aug 2026)_
+  - [ ] CFP promo kit (slide, social graphic, copy, "why present" blurb, key dates) _(Sep 2026)_
+  - [ ] Registration promo kit (email + social copy/graphics per push) _(Oct 2026)_
+  - [ ] Facilitator / day-of cheat sheet + run-of-show _(Dec 2026)_
+- [ ] Run the schedule of asks
+  - [ ] Ask 1 — Connect with potential keynote speakers _(Aug–Oct 2026)_
+  - [ ] Ask 2 — Share the CFP & recruit session speakers _(late Sep–early Nov 2026)_
+  - [ ] Ask 3 — Solicit sponsors, invitation-only with shared contact log _(Sep–Nov 2026)_
+  - [ ] Ask 4 — Encourage registration _(Nov 2026–late Jan 2027)_
+  - [ ] Ask 5 — Facilitate a session / day-of roles _(assign Jan, execute Feb 16, 2027)_
+- [ ] Recognize & evaluate
+  - [ ] Recognize Champions at and after the event _(Feb 2027)_
+  - [ ] Collect Champion feedback and run program evaluation _(Feb–Mar 2027)_
 
 ### Keynotes
-- [ ] Recruit keynotes. 
-- [ ] Initial meeting and discussion of presentation.
-- [ ] Get headshot and bio.
-- [ ] Final meeting.
+- [ ] Recruit keynotes — active emailing, in-person and initial Zoom meetings _(Sep 2026; supported by Champions Ask 1)_
+- [ ] Finalize keynotes _(mid-Nov 2026)_
+- [ ] Get keynote bios and headshots _(Nov 2026)_
+- [ ] Communicate final details — confirm topic/session, send panel questions, collect slides _(Jan 2027)_
+
+### Breakouts
+- [ ] Prepare the Call for Proposals _(after theme is set)_
+  - [ ] Update/finalize the call for session proposals _(Sep 2026)_
+  - [ ] Convert the CFP to an online form _(Oct 2026)_
+  - [ ] Design the CFP promotion slide _(Oct 2026)_
+  - [ ] Update the CFP website section _(Oct 2026)_
+- [ ] Launch and promote the CFP
+  - [ ] Email the CFP to the list _(Oct 2026)_
+  - [ ] Promote the CFP — including at the Summit on Sustainability _(Oct 2026; supported by Champions Ask 2)_
+  - [ ] Update the website with the CFP _(Oct 2026)_
+- [ ] Select sessions
+  - [ ] Close the call for session proposals _(mid-Nov 2026)_
+  - [ ] Vet and select sessions _(Dec 2026)_
+  - [ ] Confirm/notify selected session speakers _(Dec 2026)_
+- [ ] Build the agenda and materials
+  - [ ] Establish tracks and finalize the agenda / session schedule _(Jan 2027)_
+  - [ ] Update the website with the agenda _(Jan 2027)_
+  - [ ] Collect session slide decks _(Jan 2027)_
+  - [ ] Design/print brochures _(early Feb 2027)_
+  - [ ] Upload slide decks to session laptops _(Feb 2027)_
 
 ### Sponsors
-- [ ] Collect list of previous sponsors
-- [ ] Collect list of potential sponsors
-- [ ] Integrate with MORPC wide sponsor asks
-- [ ] Select sponsorship tiers and update brochure
-- [ ] Brainstorm opportunities for more sponsor engagement
+- [ ] Collect lists of previous and potential sponsors _(Aug 2026)_
+- [ ] Integrate with MORPC-wide sponsor asks _(Aug 2026)_
+- [ ] Update/finalize the sponsorship package and tiers _(Sep 2026)_
+- [ ] Design the sponsorship brochure and update the website section _(Sep 2026)_
+- [ ] Recruit sponsors _(Sep–Nov 2026; supported by Champions Ask 3)_
+- [ ] Confirm sponsorships _(Jan 2027)_
+- [ ] Invoice sponsors _(by event)_
 
 ### Registration
-- [ ] Collect email list for registration blast
-- [ ] Open Registration
-
-
-
-
+- [ ] Collect the email list for the registration blast _(Oct 2026)_
+- [ ] Open registration _(Nov 2026; supported by Champions Ask 4)_
+  - [ ] Stand up the Eventbrite site
+  - [ ] Update the website with registration
+- [ ] Close registration _(Feb 5, 2027)_
+- [ ] Send final attendee email / final instructions _(Feb 10–11, 2027)_
 
 
