@@ -12,7 +12,7 @@ Champions help to:
 • Identify and connect us with prospective keynote and session speakers (early fall)
 • Promote the Call for Session Proposals across their networks (late September–October)
 • Encourage registration throughout the region (winter)
-• Facilitate a session or welcome attendees on event day (February 9)
+• Facilitate a session or welcome attendees on event day (February 16)
 
 Most contributions require only an hour or two and occur at predictable points in the calendar, so you may take part in as many or as few as your schedule allows. In doing so, you will help foster the partnerships and shared learning that advance data practice across the Central Ohio region — and strengthen your own connections within it.
 

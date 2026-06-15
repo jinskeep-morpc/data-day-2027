@@ -22,7 +22,7 @@ Most individual asks take an hour or two, and several can be done in a few minut
 Not at all. There are five ways to help, and you opt into the ones that interest you. Picking a single ask is genuinely welcome.
 
 **When does this start and end?**
-Asks are spread across the planning year — speaker and sponsor connections in the fall, promotion and registration through the winter, and event-day roles in February. Each one comes with clear timing so nothing sneaks up on you. After the event on February 9, the commitment is complete.
+Asks are spread across the planning year — speaker and sponsor connections in the fall, promotion and registration through the winter, and event-day roles in February. Each one comes with clear timing so nothing sneaks up on you. After the event on February 16, the commitment is complete.
 
 **What if I sign up and then can't follow through?**
 That's completely fine. These are voluntary, low-pressure asks. If something comes up, just let us know and we'll cover it. We'd rather you take on only what you can comfortably do.

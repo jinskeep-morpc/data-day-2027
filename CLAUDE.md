@@ -13,7 +13,7 @@ Context and working state for the Data Day 2027 conference, with a current focus
 **Data Day 2027** will be the **5th annual** event (2026 was the 4th). Treat the 5th-anniversary milestone as a narrative anchor across program, marketing, and sponsorship.
 
 ### Quick facts
-- **Proposed date:** Tuesday, February 9, 2027 (pattern = 2nd Tuesday of February; 2026 was Feb 10). **CONFIRM.**
+- **Date:** Tuesday, February 16, 2027.
 - **Venue:** Presumably Columbus State Community College Workforce Development Center (2026 location). **CONFIRM.**
 - **Format:** ~8:30 AM–4:00 PM; morning keynote, breakout sessions, lunch keynote, more breakouts. Sessions ~45 min with significant Q&A/engagement.
 - **Planning cycle:** ~13 months. The 2026 cycle ran Jan 2025 → Feb 2026; by that cadence the 2027 cycle began ~Jan 2026 and is ~5 months in as of mid-2026.
@@ -44,7 +44,7 @@ Context and working state for the Data Day 2027 conference, with a current focus
 ---
 
 ## Open decisions / placeholders to resolve
-- Confirm event **date** (Feb 9, 2027) and **venue**.
+- Confirm event **venue**.
 - **Sign-up mechanism** — recommend a Microsoft/Google Form with a checkbox menu of the five asks.
 - **Registration comp for Champions?** (feeds the FAQ)
 - **Champion recognition** approach — program credit, website, event thank-you (feeds the FAQ + checklist).
