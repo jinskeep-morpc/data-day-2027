@@ -18,21 +18,27 @@ For more information regarding Data Day, please email jinskeep@morpc.org
 
 ## Master timeline / TODO
 
-This task list is the working master timeline for Data Day 2027. It is adapted from the
-2026 cycle (archived in `Archive/master_timeline.xlsx`) and shifted to the **Tuesday,
-February 16, 2027** event date. Target months are planning guides, not hard commitments;
-firm up exact dates as the cycle progresses. Note the major structural change for 2027:
-**the monthly Working Group is retired and replaced by the Data Day Champions program**
-(see the Champions timeline below).
+This task list is the working master timeline for Data Day 2027, anchored to the
+**Tuesday, February 16, 2027** event date. Target months are planning guides, not hard
+commitments; firm up exact dates as the cycle progresses.
 
 ### Meetings & Planning
-- [ ] Hold recurring internal Data Day team meetings (~monthly: Jul, Sep, Nov 2026; Jan 2027)
-- [ ] Provide Data Day updates at quarterly RDR meetings (Q3 Aug, Q4 Nov 2026, Q1 Feb 2027)
+- [ ] Hold recurring internal Data Day team meetings
+  - [ ] Internal Data Day team meeting — Jul 2026
+  - [ ] Internal Data Day team meeting — Sep 2026
+  - [ ] Internal Data Day team meeting — Nov 2026
+  - [ ] Internal Data Day team meeting — Jan 2027
+- [ ] Provide Data Day updates at quarterly RDR meetings
+  - [ ] RDR Q3 update — Aug 2026
+  - [ ] RDR Q4 update — Nov 2026
+  - [ ] RDR Q1 update — Feb 2027
 - [ ] Maintain ongoing planning, documentation, and timeline upkeep
 
 ### Logistics and Venue
 - [x] Select a date for the event — **Tue, Feb 16, 2027**
-- [ ] Finalize and book the venue _(target: complete — CONFIRM CSCC Workforce Development Center)_
+- [ ] Secure the venue
+  - [x] Select a venue — **Ohio State University, Vitria on the Square, 14 E. 15th Ave., Columbus, OH 43201**
+  - [ ] Book the venue
 - [ ] Select a theme for the event _(target: Sep 2026 — gates the CFP, keynotes, and marketing)_
 - [ ] Establish internal MORPC meetings with involved staff (Data, CE, Events, IT)
 - [ ] Prepare day-of logistics _(after agenda + registration are set)_
