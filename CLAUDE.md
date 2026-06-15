@@ -20,7 +20,6 @@ Context and working state for the Data Day 2027 conference, with a current focus
 
 ### Naming / leadership notes (verify before outward use)
 - The 2026 Call for Proposals refers to the "Regional Data Advisory Committee (RDAC)"; the 2026–2028 Regional Data Agenda refers to the "Regional Data Roundtable (RDR)." Confirm the current correct name before publishing.
-- Board leadership rotated between documents (2026 CFP: Chris Amorose Groomes, Chair; the Data Agenda: Ben Kessler, Chair; Matthew Starr, Secretary). Use current officers in any signed materials. William Murdock, AICP is Executive Director in both.
 
 ---
 
