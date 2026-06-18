@@ -1,6 +1,6 @@
 # CLAUDE.md — Data Day 2027 Project
 
-Context and working state for the Data Day 2027 conference, with a current focus on launching the **Data Day Champions** volunteer program. Read this first before working in the repo.
+This is a no code repository. Context and working state for the Data Day 2027 conference, with a current focus on developing the program and materials for planning. Read this first before working in the repo.
 
 ---
 
