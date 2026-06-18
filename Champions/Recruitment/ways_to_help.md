@@ -23,7 +23,7 @@ Below are five ways to help.
 
 **When:** August–October (suggestions are most useful by late September).   
 **Time:** About an hour, plus a short intro email if you make one.  
-**What you'll have:** The theme and a short list of what makes a strong Data Day keynote, a simple suggestion form, and an introduction template you can copy.  
+**What you'll have:** The theme and a short list of what makes a strong Data Day keynote, a simple [suggestion form](https://forms.cloud.microsoft/r/mYmz1bctPH), and an introduction template you can copy.  
 
 ## 2. Share the Call for Session Proposals and recruit speakers
 

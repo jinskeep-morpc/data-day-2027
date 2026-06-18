@@ -1,10 +1,11 @@
 # Data Day 2027 — "Suggest a Keynote" Form (BUILD SPEC)
 
-> **Purpose:** a short Microsoft Form for Champions (and staff) to surface keynote
-> candidates for Data Day 2027. **Audience:** internal build guide — recreate this in
-> Microsoft Forms. **Boundary:** Champions *scout and connect*; MORPC staff invite,
-> vet, and negotiate. The form collects suggestions only — it makes no commitment to
-> the speaker.
+**Live form:** <https://forms.cloud.microsoft/r/mYmz1bctPH>
+
+> **Status:** the form is **built and live** at the link above. This doc is the source
+> of truth for its content and settings — edit here, then update the live form to match.
+> **Boundary:** Champions *scout and connect*; MORPC staff invite, vet, and negotiate.
+> The form collects suggestions only — it makes no commitment to the speaker.
 
 ---
 

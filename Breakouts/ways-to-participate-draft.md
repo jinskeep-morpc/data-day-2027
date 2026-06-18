@@ -138,7 +138,7 @@ showcase tools and services, and support the event. Tabling is part of Data Day'
 
 Every attendee shares two plenary moments: a **morning keynote** to open the day and a **lunch
 keynote**. Keynote speakers are invited by the program committee. Have someone inspiring in mind?
-**[Suggest a keynote →]** *(link / form TBD).*
+**[Suggest a keynote →](https://forms.cloud.microsoft/r/mYmz1bctPH)**
 
 ---
 
@@ -206,7 +206,7 @@ MORPC staff understand and balance the program — they aren't printed in the ag
 | Notifications | **[TBD]** |
 | Data Day 2027 | **Tuesday, February 16, 2027** |
 
-**Submit / suggest:** **[CFP link, panel/keynote suggestion form, contact email — TBD]**
+**Submit / suggest:** **[CFP link — TBD]** · [Suggest a keynote](https://forms.cloud.microsoft/r/mYmz1bctPH) · **[contact email — TBD]**
 
 ---
 
