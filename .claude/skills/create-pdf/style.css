@@ -1,0 +1,117 @@
+/* MORPC / Data Day house style for generated PDFs.
+   Mirrors the look of the Champions FAQ and Ways-to-Help PDFs:
+   navy title under the MORPC logo, steel-blue section headings with
+   rules, clean sans-serif body. Rendered via headless Chromium. */
+
+:root {
+  --navy: #1b3a5b;     /* document title + strong rule */
+  --blue: #2b6c9c;     /* section headings */
+  --ink: #232a2f;      /* body text */
+  --rule: #c9d4dd;     /* light rule under section headings */
+  --callout-bg: #f1f5f8;
+}
+
+@page {
+  size: letter;
+  margin: 0.8in 0.85in;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  font-size: 11pt;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Header: MORPC logo above the title */
+.doc-header { margin-bottom: 0.35rem; }
+.doc-header img.logo { height: 46px; width: auto; }
+
+h1 {
+  color: var(--navy);
+  font-size: 26pt;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0.5rem 0 0.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--navy);
+}
+
+h2 {
+  color: var(--blue);
+  font-size: 15pt;
+  font-weight: 700;
+  margin: 1.6rem 0 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  color: var(--blue);
+  font-size: 12.5pt;
+  font-weight: 700;
+  margin: 1.1rem 0 0.4rem;
+}
+
+p { margin: 0 0 0.7rem; }
+
+strong { color: var(--navy); }
+
+ul, ol { margin: 0 0 0.7rem; padding-left: 1.3rem; }
+li { margin: 0 0 0.35rem; }
+ul li::marker { color: var(--blue); }
+ol li::marker { color: var(--blue); font-weight: 700; }
+
+a { color: var(--blue); text-decoration: none; }
+
+/* Blockquotes render as soft callouts (e.g. status notes in drafts) */
+blockquote {
+  margin: 0 0 0.9rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--callout-bg);
+  border-left: 4px solid var(--blue);
+  font-size: 10pt;
+  color: #3a4750;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* Tables (schedules, tier grids) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1rem;
+  font-size: 10pt;
+}
+th, td {
+  border: 1px solid var(--rule);
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--navy);
+  color: #fff;
+  font-weight: 700;
+}
+tr:nth-child(even) td { background: #f6f9fb; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 1.4rem 0;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 9.5pt;
+  background: var(--callout-bg);
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}
+
+/* Avoid awkward breaks */
+h1, h2, h3 { break-after: avoid; }
+table, blockquote, li { break-inside: avoid; }
