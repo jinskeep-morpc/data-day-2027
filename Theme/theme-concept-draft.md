@@ -1,13 +1,13 @@
 # Data Day 2027 — Theme Concept (DRAFT)
 
-> **Status:** **Wording LOCKED** — headline *"Five Years Forward"*, subhead *"Shaping what's next
+> **Status:** — headline *"Five Years Forward"*, subhead *"Shaping what's next
 > for Central Ohio's data community."* Direction: anniversary-based, mostly forward-looking (no
 > topical theme, so every session fits). Visual identity still to finalize. Voice: outward
 > MORPC/RDR — mission-forward and inviting.
 
 ---
 
-## Theme (locked): **Five Years Forward**
+## Theme: **Five Years Forward**
 
 ***Data Day 2027 · Shaping what's next for Central Ohio's data community***
 
@@ -16,7 +16,7 @@ five years convening the region's data community; now the question is where we t
 
 **The narrative.** Over five years, Data Day has brought Central Ohio's local governments,
 nonprofits, educational institutions, and civic-minded businesses together around a shared belief
-— that better use of data improves quality of life for all residents. Five years in, that
+— that better use of data improves the region. Five years in, that
 community is real, and *Five Years Forward* turns the milestone into momentum: honoring how far the
 region has come, then pointing the whole room at what's ahead.
 
@@ -41,7 +41,7 @@ region has come, then pointing the whole room at what's ahead.
 ## Subhead: selected
 
 **Subhead: "Shaping what's next for Central Ohio's data community."** Names the community, points
-ahead, and pairs with "Forward" without doubling the metaphor — warm but not stuffy.
+ahead, and pairs with "Forward" without doubling the metaphor.
 
 > Guardrail for all derived copy: keep the tone forward-looking. Avoid sliding into "celebrating
 > five years of building community" — that reverts to the stale, backward-looking voice this
