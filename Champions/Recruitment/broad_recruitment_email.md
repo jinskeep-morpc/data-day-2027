@@ -13,7 +13,9 @@ Data Day Champions are members of our data community who pitch in at a few key m
 
 Most asks take an hour or two, so you can take on as many or as few as you like. In return, you'll help strengthen the partnerships and shared learning that move data practice forward across the region — and grow your own connections within it. For more on each specific ask, see the attached Ways to Help.
 
-Interested? Sign up here: [sign-up link], or just reply, by [response date]. We'll follow up with the details and timing. For more about the Data Day Champions program, see the attached FAQ or email jinskeep@morpc.org.
+Already have a keynote speaker in mind? You can suggest one anytime — no sign-up required — at our Suggest a Keynote form: https://forms.cloud.microsoft/r/mYmz1bctPH. Just surface a name and why they'd inspire the room; MORPC staff handle the invitation from there.
+
+Interested? Sign up here: https://forms.cloud.microsoft/r/7cFXhbQeMc, or just reply, by Friday, August 14, 2026. We'll follow up with the details and timing. For more about the Data Day Champions program, see the attached FAQ or email jinskeep@morpc.org.
 
 Thank you for helping us mark five years of Data Day.
 

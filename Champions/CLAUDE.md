@@ -13,7 +13,7 @@ In 2027, the standing monthly Working Group is replaced by **Data Day Champions*
 ### The five ways to help (agreed scope)
 1. **Connect with potential keynote speakers** (Aug–Oct; keynotes finalize mid-Nov). Scouts/connectors only; staff invite and negotiate.
 2. **Share the CFP & recruit session speakers** (late Sep–early Nov). Amplify the Call for Proposals and personally nudge strong presenters; staff review/select.
-3. **Solicit sponsors** (Sep–Nov). **Highest-risk ask.** Introductions only; staff own package/pricing/ask/invoicing. Recommended: **invitation-only** to a few trusted Champions in year one, with a shared contact log to avoid collisions.
+3. **Solicit sponsors** (Sep–Nov). Treated like any other ask — open to all Champions. Introductions only; staff own package/pricing/ask/invoicing. A shared contact log remains good practice to avoid collisions.
 4. **Encourage registration** (Nov–late Jan). Amplification and peer/team invitation once registration opens.
 5. **Facilitate a session / day-of roles** (assign Jan, execute Feb 16). Facilitator is the anchor role; also greeter, room host, social/photo.
 
@@ -32,7 +32,7 @@ In 2027, the standing monthly Working Group is replaced by **Data Day Champions*
 
 - Opt-in asks risk diffusion of responsibility on deadline-bound work → staff own the critical path; every critical-path ask needs a named fallback.
 - Name a single Coordinator — redistributed work can exceed the old Working Group if it becomes "everyone's job."
-- Sponsor solicitation = optics risk → invitation-only year one, intros only, shared contact log, route all financials to staff, handle Champion's-own-employer cases via staff.
+- Sponsor solicitation is open to all Champions (same as every other ask). The universal boundary still applies: intros only, route all financials to staff, handle Champion's-own-employer cases via staff. Keep a shared contact log to avoid collisions.
 - Retain a deliberative body for judgment calls the Working Group used to make.
 - **Kit-before-ask gate:** never send an ask before its resource kit exists.
 - Recruit a *diverse* Champion pool (personal-network recruiting replicates existing networks; cuts against the representation pillar).

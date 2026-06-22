@@ -70,7 +70,7 @@ We hope you will — it's the best part! Most asks don't require attendance, tho
 Registration and the Champion role are separate — Champions register like everyone else. We keep Data Day's registration accessible, and we recognize Champion contributions in the program, on the website, and at the event.
 
 **How do I sign up?**
-Let us know which ways you'd like to help at **[sign-up link]**. We'll follow up with the details and timing for each.
+Let us know which ways you'd like to help at **[our sign-up form](https://forms.cloud.microsoft/r/7cFXhbQeMc)**. We'll follow up with the details and timing for each.
 
 **Who do I contact with questions?**
 Reach out to Jordan Inskeep at jinskeep@morpc.org anytime — before, during, or after you sign up.

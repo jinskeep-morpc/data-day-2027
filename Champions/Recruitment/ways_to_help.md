@@ -82,6 +82,6 @@ Below are five ways to help.
 
 ## Ready to help?
 
-You can take on as many or as few of these as you'd like. Let us know which interest you at **[sign-up link]**, and we'll follow up with the details and timing for each.
+You can take on as many or as few of these as you'd like. Let us know which interest you at **[our sign-up form](https://forms.cloud.microsoft/r/7cFXhbQeMc)**, and we'll follow up with the details and timing for each.
 
 Thank you for helping us make year five the best one yet.
