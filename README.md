@@ -64,7 +64,7 @@ commitments; firm up exact dates as the cycle progresses.
   - [ ] Ask 2 — Share the CFP & recruit session speakers _(late Sep–early Nov 2026)_
   - [ ] Ask 3 — Solicit sponsors (open to all Champions; shared contact log) _(Sep–Nov 2026)_
   - [ ] Ask 4 — Encourage registration _(Nov 2026–late Jan 2027)_
-  - [ ] Ask 5 — Facilitate a session / day-of roles _(assign Jan, execute Feb 16, 2027)_
+  - [ ] Ask 5 — Take a day-of role _(assign Jan, execute Feb 16, 2027)_
 - [ ] Recognize & evaluate
   - [ ] Recognize Champions at and after the event _(Feb 2027)_
   - [ ] Collect Champion feedback and run program evaluation _(Feb–Mar 2027)_

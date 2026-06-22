@@ -62,7 +62,7 @@ Options:
 - **Share the Call for Proposals and recruit speakers** (late Sep–early Nov) — spread the CFP and nudge strong presenters to submit.
 - **Help solicit sponsors** (Sep–Nov) — suggest organizations and make warm introductions; staff handle the package and the ask.
 - **Encourage registration** (Nov–late Jan) — invite your network and colleagues once registration opens.
-- **Facilitate a session or take a day-of role** (Feb 16) — facilitator, greeter, or social/photo.
+- **Take a day-of role** (Feb 16) — session facilitator, workshop session assistant, greeter, or social/photo.
 - **I'm interested — help me find the right fit.**
 
 **Q6. Anything else you'd like us to know?** — *[Long answer]* — *Optional.*
