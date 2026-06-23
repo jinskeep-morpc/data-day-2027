@@ -1,6 +1,9 @@
 # Data Day 2027 — Theme Concept (DRAFT)
 
-> **Status:** — headline *"Five Years Forward"*, subhead *"Shaping what's next
+> **Status:** SUPERSEDED — the lead theme is now
+> [Plotting What's Next](theme-concept-plotting-whats-next.md). Kept for reference.
+>
+> *(original)* — headline *"Five Years Forward"*, subhead *"Shaping what's next
 > for Central Ohio's data community."* Direction: anniversary-based, mostly forward-looking (no
 > topical theme, so every session fits). Visual identity still to finalize. Voice: outward
 > MORPC/RDR — mission-forward and inviting.
