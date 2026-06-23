@@ -71,7 +71,7 @@ Deliver:
    and color-blind-safe.
 4. Accessibility check: list which text/background pairings meet WCAG AA (4.5:1) and AAA.
 5. Two or three suggested pairings ("hero + neutral for headers," etc.).
-6. A short rationale tying the palette to "Five Years Forward" (motion, optimism).
+6. A short rationale tying the palette to "Plotting What's Next" (forward motion, optimism).
 
 Output the palette as an HTML swatch sheet I can preview (named blocks with HEX labels),
 plus the values as a copyable list and as CSS custom properties (:root variables).
@@ -189,7 +189,7 @@ to the resource kits already called for (CFP promo, registration promo, sponsors
 [Paste the CONTEXT block + final palette + logo files.]
 
 Design a marketing template kit for Data Day 2027 using the palette and logo, carrying
-the "Five Years Forward" motion motif. For each item, give me an editable layout
+the "Plotting What's Next" plot/route motif. For each item, give me an editable layout
 (HTML/CSS artifact is fine for previewing, with text I can swap):
 
 1. Save-the-date / announcement graphic (square 1080×1080 for social).
@@ -226,7 +226,7 @@ logo are settled so the design tokens are real.
 - Encode the palette as CSS custom properties and reuse the logo/icon SVGs inline.
 
 **Proposed sections (single landing page to start)**
-1. Hero — logo, "Five Years Forward," date + venue, primary "Register" / "Notify me" CTA.
+1. Hero — logo, "Plotting What's Next," date + venue, primary "Register" / "Notify me" CTA.
 2. About — what Data Day is; the five-year momentum narrative; who attends.
 3. Program / schedule — high-level day shape; deep-link to the full agenda when ready.
 4. Keynotes & speakers — populate as confirmed.

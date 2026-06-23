@@ -1,6 +1,6 @@
 # Data Day 2027 — Program & Schedule (DRAFT)
 
-**Theme:** Five Years Forward — *Shaping what's next for Central Ohio's data community*
+**Theme:** Plotting What's Next — *Five years forward for Central Ohio's data community*
 **Event:** Data Day 2027 — 5th annual
 **Date:** Tuesday, February 16, 2027
 **Venue:** OSU Vitria on the Square, 14 E. 15th Ave., Columbus, OH 43201

@@ -7,14 +7,14 @@
 
 ---
 
-## Five Years Forward
-### *Shaping what's next for Central Ohio's data community*
+## Plotting What's Next
+### *Five years forward for Central Ohio's data community*
 
 Data Day returns for its **fifth year** on **Tuesday, February 16, 2027** — and this milestone is
 a launch pad, not a look back. Across five years, Data Day has convened Central Ohio's public-sector
 data community — **local governments, nonprofits, educational institutions, and civic-minded
 businesses** — around a shared vision: **to make Central Ohio a leader in using data to improve
-the quality of life for all residents.** *Five Years Forward* turns that momentum toward what
+the quality of life for all residents.** *Plotting What's Next* turns that momentum toward what
 comes next, and we want you in the room helping shape it.
 
 There are many ways to take part — whether you want to present your work, lead a hands-on

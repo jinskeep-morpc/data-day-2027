@@ -1,8 +1,7 @@
 # Data Day 2027 — Theme Concept: "Plotting What's Next" (DRAFT)
 
-> **Status:** **SELECTED — lead theme for Data Day 2027.** Supersedes
-> [Five Years Forward](theme-concept-draft.md). Anniversary-based and forward-looking,
-> with a strong, ownable visual hook. Visual identity in progress (see
+> **Status:** **SELECTED — lead theme for Data Day 2027.** Anniversary-based and
+> forward-looking, with a strong, ownable visual hook. Visual identity in progress (see
 > [design brief](../Design/design-brief.md)). Voice: outward MORPC/RDR —
 > mission-forward and inviting.
 

@@ -79,7 +79,7 @@ Use the two slots to de-risk *and* learn:
 
 - **Morning — facilitated skill-building:** the safe, marketable anchor with a clear takeaway.
 - **Afternoon — problem-focused:** pilot the collaborative format with a strong facilitator, and
-  **capture its output for the RDR** — which ties to *Five Years Forward* (the community shaping
+  **capture its output for the RDR** — which ties to *Plotting What's Next* (the community shaping
   what's next).
 - **Defer the un-conference** to a future year.
 
