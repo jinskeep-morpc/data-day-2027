@@ -6,7 +6,8 @@ it into a simple static site. Read the lead
 first — every prompt below inherits from it.
 
 > **Status:** planning. Lead theme: **"Plotting What's Next."** Decisions locked so far:
-> **fresh, independent color palette** (not bound to the MORPC brand palette) and a
+> **color palette — "Magenta Signal (Dark)"** (dark-first; magenta hero, indigo secondary,
+> gold accent — final values in [palette.md](palette.md) / [palette.css](palette.css)) and a
 > **wordmark + minimal scatter-plot mark** (rising points with a curved trend line
 > ending in an arrow) logo direction. Everything else is open for iteration.
 
@@ -37,8 +38,11 @@ CONTEXT — Data Day 2027
   should sit comfortably next to it without clashing — fresh, but not garish.
 - Art direction (decided):
   - Mood: energetic & optimistic — forward-leaning and momentum-driven.
-  - Color: cool & analytical — blues, teals, indigo — kept lively by one brighter
-    accent and strong contrast. Credible and data-native, but not cold or flat.
+  - Color (LOCKED — see palette.md): dark-first "Magenta Signal" — near-black violet
+    surfaces with Signal Magenta as hero, Route Indigo as the cooler secondary, and a warm
+    Plot Gold accent for forward motion. Analytical and data-native, kept lively by the gold
+    and strong contrast; deliberately distinct from MORPC's blue/green, but sits comfortably
+    beside the MORPC logo.
   - Motif handling: "balanced & recognizable" — clearly read as data points connecting
     into a forward route/trend line, but tasteful (no clip-art charts).
   - Typography: humanist sans-serif — modern but approachable and warm.
@@ -47,6 +51,11 @@ CONTEXT — Data Day 2027
 ---
 
 ## 2. Color palette
+
+> **DECIDED (2026-07-14):** the palette is locked — **"Magenta Signal (Dark)"**. Final
+> values (core colors, 100–700 scales, data-viz set, WCAG table, CSS tokens) live in
+> [`palette.md`](palette.md) and [`palette.css`](palette.css). The goal/prompt below is
+> retained for reference and regeneration.
 
 **Goal:** a fresh, distinctive Data Day 2027 palette — a hero color, supporting colors,
 an energetic accent for the "motion" feel, and a neutral set — all accessible.
@@ -77,12 +86,19 @@ Output the palette as an HTML swatch sheet I can preview (named blocks with HEX 
 plus the values as a copyable list and as CSS custom properties (:root variables).
 ```
 
-**After it runs:** save the chosen values to `Design/palette.md` (and later into the
-site's CSS variables). Ask for one light and one dark variant if we want a dark hero.
+**Done:** chosen values saved in [`palette.md`](palette.md) + [`palette.css`](palette.css).
+The selected direction is dark-first (dark hero already baked in); a light-surface variant
+can still be generated later if we want light-background collateral.
 
 ---
 
 ## 3. Logo
+
+> **DONE (2026-07-14):** the logo is built — **"The Trend Mark"**. Editable SVG source
+> (icon, horizontal + stacked lockups, one-color/reversed, favicon) and usage rules live in
+> [`logo/`](logo/) — see [`logo/README.md`](logo/README.md). Wordmark set in **Figtree**;
+> arrow in Signal Magenta, axes/points in Cloud White (dark) or Ink Void (light). The
+> prompt/spec below is retained for reference and regeneration.
 
 **Direction (locked):** a "Data Day 2027" wordmark paired with a hero mark that is a
 **minimal scatter-plot** — small points trending upward, with a smooth curved trend line
@@ -128,8 +144,9 @@ Weight & legibility:
   (down to a ~24px favicon); points small but solid. Test it at tiny sizes.
 - Wordmark "Data Day 2027" in a humanist sans-serif (modern but warm); tagline
   "Plotting What's Next".
-- Use the palette: axes and points in the cool base; the trend curve + arrow in the
-  brighter accent so the upward motion pops. Offer a couple of color variants.
+- Use the palette (see palette.md): axes and points in Route Indigo / Signal Magenta; the
+  trend curve + arrow in Plot Gold so the upward motion pops. Designed for the dark-first
+  surfaces (Ink Void), with a one-color (ink) fallback. Offer a couple of color variants.
 
 Deliver as editable SVG (vector):
 1. Primary lockup — horizontal: mark at left, "Data Day 2027" to the right.
@@ -148,6 +165,12 @@ Keep source SVGs in `Design/logo/`.
 ---
 
 ## 4. Icons
+
+> **DONE (2026-07-14):** the icon set is built — 22 SVGs (11 topic/track + 11
+> UI/wayfinding) in [`icons/`](icons/), split into `topic/` and `ui/`. Locked spec:
+> **24×24 grid, 1.75px stroke, round caps/joins, `currentColor`** (magenta/gold reserved for
+> active states). See [`icons/README.md`](icons/README.md). The prompt below is retained for
+> reference and for adding matching icons later.
 
 **Goal:** a consistent icon set for session topics and for the website/marketing UI,
 in a style that echoes the motion motif (consistent stroke, slight forward energy).
@@ -223,7 +246,8 @@ logo are settled so the design tokens are real.
   outgrow a single page.
 - Serve from the **`/docs` folder on a `main`/site branch** or a dedicated `gh-pages`
   branch — decide at build time.
-- Encode the palette as CSS custom properties and reuse the logo/icon SVGs inline.
+- Encode the palette as CSS custom properties — already done: reuse `Design/palette.css`
+  (dark-first tokens) — and reuse the logo/icon SVGs inline.
 
 **Proposed sections (single landing page to start)**
 1. Hero — logo, "Plotting What's Next," date + venue, primary "Register" / "Notify me" CTA.

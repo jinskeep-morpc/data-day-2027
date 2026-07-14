@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Data Day 2027 — Color Tokens
+   Palette: "Magenta Signal (Dark)" — dark-first.
+   Documentation + rationale: palette.md
+   Source: Claude Design project 19813721-b03a-45cc-9964-61ad5e02f050
+   ========================================================================== */
+
+:root {
+  /* --- Signal Magenta (hero) --- */
+  --dd-magenta-100: #F6E6F3;
+  --dd-magenta-200: #E9BEE0;
+  --dd-magenta-300: #E48CDA;
+  --dd-magenta-400: #C36BB6;
+  --dd-magenta-500: #CB4FC0;
+  --dd-magenta-600: #7A2F71;
+  --dd-magenta-700: #552050;
+
+  /* --- Route Indigo (secondary) --- */
+  --dd-indigo-100: #EAE8F9;
+  --dd-indigo-200: #CBC5F0;
+  --dd-indigo-300: #9C8FE0;
+  --dd-indigo-400: #7A6BCF;
+  --dd-indigo-500: #6153C4;
+  --dd-indigo-600: #443A8C;
+  --dd-indigo-700: #302963;
+
+  /* --- Plot Gold (accent / forward motion) --- */
+  --dd-gold-100: #FDF1D9;
+  --dd-gold-200: #FBDE9F;
+  --dd-gold-300: #F9CA6A;
+  --dd-gold-400: #F7C24F;
+  --dd-gold-500: #F6B93B;
+  --dd-gold-600: #B8790F;
+  --dd-gold-700: #8A5B0B;
+
+  /* --- Neutrals / surfaces --- */
+  --dd-cloud:       #F5F0F7; /* primary light foreground on dark */
+  --dd-mist:        #948DA0; /* muted foreground, borders, disabled */
+  --dd-surface:     #4A3F5C; /* elevated dark surface: cards, panels */
+  --dd-ink-void:    #221C2B; /* primary dark background */
+  --dd-page:        #0F0C13; /* deepest page base (mockup) */
+  --dd-card:        #1B1622; /* card fill on page base (mockup) */
+  --dd-border:      #2B2434; /* hairline border on dark */
+
+  /* --- Data-visualization categorical palette --- */
+  --dd-viz-1: #CB4FC0; /* Magenta */
+  --dd-viz-2: #9C8FE0; /* Indigo   */
+  --dd-viz-3: #F6B93B; /* Gold     */
+  --dd-viz-4: #F2607B; /* Rose     */
+  --dd-viz-5: #C96A3E; /* Rust     */
+  --dd-viz-6: #948DA0; /* Mist Gray */
+
+  /* --- Semantic aliases (map roles → tokens) --- */
+  --dd-hero:       var(--dd-magenta-500);
+  --dd-secondary:  var(--dd-indigo-500);
+  --dd-accent:     var(--dd-gold-500);
+  --dd-bg:         var(--dd-ink-void);
+  --dd-fg:         var(--dd-cloud);
+  --dd-fg-muted:   var(--dd-mist);
+  --dd-link:       var(--dd-magenta-300); /* text emphasis on dark; 500 is fill-only */
+  --dd-link-alt:   var(--dd-indigo-300);
+  --dd-on-accent:  var(--dd-ink-void);    /* dark text on gold buttons */
+}

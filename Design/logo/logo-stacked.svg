@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 214" width="260" height="214" role="img" aria-labelledby="ls-title">
+  <title id="ls-title">Data Day 2027 — Plotting What's Next (stacked lockup)</title>
+  <desc>Stacked lockup for dark backgrounds: centered white trend mark with magenta arrow above the magenta "Plotting What's Next" wordmark and "Data Day 2027".</desc>
+  <!-- mark: 108x108 centered near top -->
+  <g transform="translate(39.633,-16.906) scale(0.220408)" style="color:#F5F0F7">
+    <path d="M 173.99191,559.10665 H 641.5168" fill="none" stroke="currentColor" stroke-width="14.4" stroke-linecap="round"/>
+    <path d="m 211.37723,123.12357 v 467.5249" fill="none" stroke="currentColor" stroke-width="14.4" stroke-linecap="round"/>
+    <circle cx="248.69173" cy="498.01663" r="9.2476263" fill="none" stroke="currentColor" stroke-width="7.42475"/>
+    <circle cx="348.375" cy="505.53125" r="9.2476263" fill="none" stroke="currentColor" stroke-width="7.42475"/>
+    <circle cx="407.53125" cy="406.77148" r="9.2476263" fill="none" stroke="currentColor" stroke-width="7.42475"/>
+    <circle cx="504.25195" cy="427.41211" r="9.2476263" fill="none" stroke="currentColor" stroke-width="7.42475"/>
+    <circle cx="516.61914" cy="296.58984" r="9.2476263" fill="none" stroke="currentColor" stroke-width="7.42475"/>
+    <path transform="translate(0.13638047,-0.05627852)" fill="#CB4FC0" d="M 576.82651 204.18714 A 3.6003599 3.6003599 0 0 0 575.09799 205.31214 L 549.66245 235.31018 A 3.6003599 3.6003599 0 0 0 551.37534 241.08558 L 559.21909 243.43714 C 519.67073 364.08588 444.71797 425.09234 378.71128 456.52893 C 328.57672 480.40621 284.06451 486.94206 264.28354 488.74183 C 266.26284 491.02009 267.46909 493.9852 267.46909 497.21253 C 267.46909 499.28394 266.97063 501.24655 266.09214 502.98987 C 287.35294 500.99257 333.42188 494.04738 384.90268 469.52893 C 453.71797 436.75471 532.23539 372.19244 573.01206 247.56995 L 581.1937 250.02308 A 3.6003599 3.6003599 0 0 0 585.80503 246.17151 L 581.42026 207.23792 A 3.6003599 3.6003599 0 0 0 578.89096 204.1969 A 3.6003599 3.6003599 0 0 0 576.82651 204.18714 z"/>
+  </g>
+  <!-- wordmark, centered -->
+  <g font-family="Figtree, system-ui, sans-serif" font-weight="800" font-size="29" letter-spacing="1.16" fill="#CB4FC0" text-anchor="middle">
+    <text x="130" y="147">PLOTTING</text>
+    <text x="130" y="179">WHAT'S NEXT</text>
+  </g>
+  <text x="130" y="201" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-weight="600" font-size="14" letter-spacing="0.14" fill="#C9C2D1">Data Day <tspan fill="#F6B93B">2027</tspan></text>
+</svg>

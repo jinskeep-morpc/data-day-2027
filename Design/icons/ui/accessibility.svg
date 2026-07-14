@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Accessibility">
+  <title>Accessibility</title>
+  <path d="M8 10.5H16L13.2 12.5L15 17"/>
+  <path d="M13.2 12.5L10.5 14L9 17"/>
+  <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor"/>
+  <circle cx="12" cy="7.4" r="1.5" fill="currentColor" stroke="none"/>
+</svg>

@@ -75,6 +75,11 @@ scatter-plot** — small rising points with a smooth curved trend line ending in
 paired with the "Data Day 2027" wordmark. See the [design brief](../Design/design-brief.md)
 for the full logo prompt and art-direction decisions.
 
+The palette is locked (see [palette.md](../Design/palette.md)): a dark-first **"Magenta
+Signal"** system — Signal Magenta hero, Route Indigo secondary, Plot Gold as the
+forward-motion accent for the plotted trend line. Deliberately distinct from MORPC's
+blue/green, so the "plot the points, plot the course" motif reads as its own ownable mark.
+
 ---
 
 ## Open items / to verify
