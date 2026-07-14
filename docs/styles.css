@@ -167,6 +167,17 @@ section h2 .tick { color: var(--dd-gold-500); }
 .faq__q { font-size: 1.1rem; color: var(--fg); margin: 0 0 0.5rem; }
 .faq__a { margin: 0; color: #C9C2D1; }
 
+/* ---- Sponsor wall (placeholder slots until logos sign on) ---- */
+.sponsor-wall { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.75rem; }
+@media (min-width: 40rem) { .sponsor-wall { grid-template-columns: repeat(4, 1fr); } }
+.sponsor-slot {
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  min-height: 96px; padding: 1rem;
+  border: 1px dashed var(--dd-border); border-radius: var(--radius);
+  background: var(--dd-card);
+  color: var(--dd-mist); font-size: 0.85rem; font-weight: 600;
+}
+
 /* ---- Venue ---- */
 .venue { background: var(--dd-ink-void); border-block: 1px solid var(--dd-border); }
 .venue address { font-style: normal; color: #C9C2D1; margin: 0.5rem 0 1.25rem; }
