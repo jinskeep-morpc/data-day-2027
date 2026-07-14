@@ -153,6 +153,21 @@ section h2 .tick { color: var(--dd-gold-500); }
 .card__more { display: inline-block; margin-top: 1rem; color: var(--dd-magenta-300); font-weight: 600; font-size: 0.95rem; }
 .card--link:hover .card__more { color: var(--dd-magenta-500); }
 
+/* ---- Ways to help: per-way key/value meta ---- */
+.way ul { margin: 0 0 0.5rem; padding-left: 1.15rem; color: #C9C2D1; }
+.way ul li { margin-bottom: 0.35rem; }
+.way ul li::marker { color: var(--dd-magenta-300); }
+.kv { margin: 1.1rem 0 0; }
+.kv > div { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.15rem 0.9rem; padding: 0.5rem 0; border-top: 1px solid var(--dd-border); }
+.kv dt { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dd-mist); padding-top: 0.15rem; }
+.kv dd { margin: 0; color: #C9C2D1; font-size: 0.95rem; }
+
+/* ---- FAQ ---- */
+.faq { margin: 1rem 0 2.5rem; max-width: 74ch; }
+.faq__item + .faq__item { margin-top: 1.6rem; padding-top: 1.6rem; border-top: 1px solid var(--dd-border); }
+.faq__q { font-size: 1.1rem; color: var(--fg); margin: 0 0 0.5rem; }
+.faq__a { margin: 0; color: #C9C2D1; }
+
 /* ---- Venue ---- */
 .venue { background: var(--dd-ink-void); border-block: 1px solid var(--dd-border); }
 .venue address { font-style: normal; color: #C9C2D1; margin: 0.5rem 0 1.25rem; }
