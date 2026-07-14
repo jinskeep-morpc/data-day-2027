@@ -1,14 +1,18 @@
-/* MORPC / Data Day house style for generated PDFs.
-   Mirrors the look of the Champions FAQ and Ways-to-Help PDFs:
-   navy title under the MORPC logo, steel-blue section headings with
-   rules, clean sans-serif body. Rendered via headless Chromium. */
+/* Data Day 2027 house style for generated PDFs.
+   Themed to "Plotting What's Next" — the Magenta Signal palette on white
+   paper: magenta document title with a gold rule, indigo section headings,
+   Ink Void body. Co-branded header (Data Day mark + MORPC logo).
+   Rendered via headless Chromium. Palette source: Design/palette.md. */
 
 :root {
-  --navy: #1b3a5b;     /* document title + strong rule */
-  --blue: #2b6c9c;     /* section headings */
-  --ink: #232a2f;      /* body text */
-  --rule: #c9d4dd;     /* light rule under section headings */
-  --callout-bg: #f1f5f8;
+  --magenta: #CB4FC0;      /* hero — document title, brand wordmark */
+  --magenta-deep: #7A2F71; /* strong lead-ins / labels (higher contrast) */
+  --indigo: #6153C4;       /* section headings, links */
+  --gold: #F6B93B;         /* accent — title rule, list markers */
+  --gold-deep: #B8790F;    /* the "2027", list markers on white */
+  --ink: #221C2B;          /* body text (Ink Void) */
+  --rule: #E4DAE9;         /* light lavender rule under section headings */
+  --callout-bg: #FAF2F8;   /* soft magenta-tinted callout */
 }
 
 @page {
@@ -19,29 +23,37 @@
 * { box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: var(--ink);
+  font-family: "Figtree", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #000;
   font-size: 11pt;
   line-height: 1.5;
   margin: 0;
+  background: #fff;
 }
 
-/* Header: MORPC logo above the title */
-.doc-header { margin-bottom: 0.35rem; }
-.doc-header img.logo { height: 46px; width: auto; }
+/* Co-branded header: Data Day lockup at left, MORPC logo at right */
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+.doc-header img.event-lockup { height: 56px; width: auto; }
+.doc-header img.morpc { height: 40px; width: auto; }
 
 h1 {
-  color: var(--navy);
+  color: #000;
   font-size: 26pt;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.15;
   margin: 0.5rem 0 0.4rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--navy);
+  border-bottom: 3px solid var(--gold);
 }
 
 h2 {
-  color: var(--blue);
+  color: #000;
   font-size: 15pt;
   font-weight: 700;
   margin: 1.6rem 0 0.6rem;
@@ -50,7 +62,7 @@ h2 {
 }
 
 h3 {
-  color: var(--blue);
+  color: #000;
   font-size: 12.5pt;
   font-weight: 700;
   margin: 1.1rem 0 0.4rem;
@@ -58,23 +70,23 @@ h3 {
 
 p { margin: 0 0 0.7rem; }
 
-strong { color: var(--navy); }
+strong { color: #000; }
 
 ul, ol { margin: 0 0 0.7rem; padding-left: 1.3rem; }
 li { margin: 0 0 0.35rem; }
-ul li::marker { color: var(--blue); }
-ol li::marker { color: var(--blue); font-weight: 700; }
+ul li::marker { color: #000; }
+ol li::marker { color: #000; font-weight: 700; }
 
-a { color: var(--blue); text-decoration: none; }
+a { color: #000; text-decoration: none; }
 
 /* Blockquotes render as soft callouts (e.g. status notes in drafts) */
 blockquote {
   margin: 0 0 0.9rem;
   padding: 0.6rem 0.9rem;
   background: var(--callout-bg);
-  border-left: 4px solid var(--blue);
+  border-left: 4px solid var(--magenta);
   font-size: 10pt;
-  color: #3a4750;
+  color: #4a3a48;
 }
 blockquote p:last-child { margin-bottom: 0; }
 
@@ -92,11 +104,11 @@ th, td {
   vertical-align: top;
 }
 th {
-  background: var(--navy);
+  background: var(--indigo);
   color: #fff;
   font-weight: 700;
 }
-tr:nth-child(even) td { background: #f6f9fb; }
+tr:nth-child(even) td { background: #faf6fb; }
 
 hr {
   border: none;
@@ -105,7 +117,7 @@ hr {
 }
 
 code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 9.5pt;
   background: var(--callout-bg);
   padding: 0.05rem 0.3rem;

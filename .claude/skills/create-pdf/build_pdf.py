@@ -30,6 +30,9 @@ STYLE = SKILL_DIR / "style.css"
 
 CHROMIUM_CANDIDATES = ["chromium", "chromium-browser", "google-chrome", "google-chrome-stable"]
 
+# Full Data Day 2027 horizontal lockup (mark + wordmark), tuned for light/paper docs.
+EVENT_LOCKUP = REPO_ROOT / "Design" / "logo" / "logo-horizontal-light.svg"
+
 
 def find_chromium() -> str:
     for name in CHROMIUM_CANDIDATES:
@@ -51,11 +54,18 @@ def build_html(md_path: Path, logo: Path | None) -> str:
         extensions=["extra", "sane_lists", "smarty"],
     )
     css = STYLE.read_text(encoding="utf-8")
-    header = ""
+    # Event lockup at left (always shown); MORPC logo at right unless --no-logo.
+    if EVENT_LOCKUP.exists():
+        lockup = f'<img class="event-lockup" src="{data_uri(EVENT_LOCKUP)}" alt="Data Day 2027 — Plotting What&#39;s Next">'
+    else:
+        print(f"warning: event lockup not found at {EVENT_LOCKUP}", file=sys.stderr)
+        lockup = ""
+    morpc = ""
     if logo and logo.exists():
-        header = f'<div class="doc-header"><img class="logo" src="{data_uri(logo)}" alt="MORPC"></div>'
+        morpc = f'<img class="morpc" src="{data_uri(logo)}" alt="MORPC">'
     elif logo:
         print(f"warning: logo not found at {logo}; rendering without it", file=sys.stderr)
+    header = f'<div class="doc-header">{lockup}{morpc}</div>'
     return (
         "<!DOCTYPE html><html><head><meta charset='utf-8'>"
         f"<style>{css}</style></head><body>{header}{body}</body></html>"
