@@ -93,6 +93,10 @@ img, svg { max-width: 100%; }
   color: var(--dd-mist); margin: 0 0 1.25rem;
 }
 .hero__mark { width: clamp(64px, 12vw, 104px); height: auto; margin-bottom: 1.5rem; }
+/* Mark + title share one row (horizontal lockup) */
+.hero__lockup { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem); }
+.hero__lockup .hero__mark { margin-bottom: 0; flex: none; }
+.hero__lockup h1 { flex: 1 1 auto; min-width: 0; }
 .hero h1 {
   font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 800; margin: 0;
   color: var(--hero);
