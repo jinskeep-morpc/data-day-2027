@@ -81,6 +81,16 @@ img, svg { max-width: 100%; }
   border: 1.5px solid var(--dd-border);
 }
 
+/* ---- MORPC signature strip (above nav) ---- */
+.sig-strip { background: var(--dd-ink-void); border-bottom: 1px solid var(--dd-border); }
+.sig-strip .wrap { display: flex; justify-content: center; padding-block: 0.4rem; }
+.sig-strip a, .sig-strip span {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--dd-mist); text-decoration: none;
+}
+.sig-strip a:hover { color: var(--dd-magenta-300); }
+
 /* ---- Top nav ---- */
 .topbar { background: var(--dd-ink-void); border-bottom: 1px solid var(--dd-border); }
 .topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-block: 0.85rem; }
@@ -148,10 +158,13 @@ section h2 .tick { color: var(--dd-gold-500); }
 .venue address { font-style: normal; color: #C9C2D1; margin: 0.5rem 0 1.25rem; }
 
 /* ---- Footer ---- */
-footer { padding-block: 2.5rem; }
-footer .wrap { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+footer { padding-block: 2.5rem; border-top: 1px solid var(--dd-border); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 1.5rem 2rem; justify-content: space-between; align-items: center; }
 footer p { margin: 0; color: var(--fg-muted); font-size: 0.92rem; }
 footer a { color: var(--link); }
+.footer__morpc { display: inline-flex; flex: none; }
+.footer__morpc img { width: 200px; height: auto; }
+.footer__text { display: flex; flex-direction: column; gap: 0.4rem; }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
