@@ -95,7 +95,6 @@ img, svg { max-width: 100%; }
 .topbar { background: var(--dd-ink-void); border-bottom: 1px solid var(--dd-border); }
 .topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-block: 0.85rem; }
 .topbar__brand { display: flex; align-items: center; gap: 0.6rem; color: var(--fg); text-decoration: none; font-weight: 700; }
-.topbar__logo { width: 30px; height: 30px; }
 .topbar__brand b { color: var(--dd-gold-500); }
 .topbar__nav { display: flex; gap: clamp(1rem, 3vw, 1.75rem); }
 .topbar__nav a { color: var(--fg); text-decoration: none; font-weight: 600; }
