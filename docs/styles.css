@@ -93,8 +93,8 @@ img, svg { max-width: 100%; }
 
 /* ---- Top nav ---- */
 .topbar { background: var(--dd-ink-void); border-bottom: 1px solid var(--dd-border); }
-.topbar .wrap { display: flex; align-items: center; justify-content: space-between; padding-block: 0.85rem; }
-.topbar__brand { display: flex; align-items: center; gap: 0.6rem; color: var(--fg); text-decoration: none; font-weight: 700; }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.35rem 1.25rem; padding-block: 0.85rem; }
+.topbar__brand { display: flex; align-items: center; gap: 0.6rem; color: var(--fg); text-decoration: none; font-weight: 700; white-space: nowrap; }
 .topbar__brand b { color: var(--dd-gold-500); }
 .topbar__nav { display: flex; gap: clamp(1rem, 3vw, 1.75rem); }
 .topbar__nav a { color: var(--fg); text-decoration: none; font-weight: 600; }
@@ -109,7 +109,7 @@ img, svg { max-width: 100%; }
 .hero .eyebrow {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--dd-mist); margin: 0 0 1.25rem;
+  color: var(--dd-indigo-300); margin: 0 0 1.25rem;
 }
 .hero__mark { width: clamp(64px, 12vw, 104px); height: auto; margin-bottom: 1.5rem; }
 /* Mark + title share one row (horizontal lockup) */
@@ -125,7 +125,7 @@ img, svg { max-width: 100%; }
 .hero .facts { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; margin: 1.75rem 0 0; padding: 0; list-style: none; }
 .hero .facts li { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; }
 .hero .facts .num { color: var(--dd-gold-500); }
-.hero .facts svg { width: 20px; height: 20px; color: var(--dd-magenta-300); flex: none; }
+.hero .facts svg { width: 20px; height: 20px; color: var(--dd-indigo-300); flex: none; }
 .hero .cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.25rem; }
 
 /* ---- Sections ---- */
@@ -141,7 +141,7 @@ section h2 .tick { color: var(--dd-gold-500); }
   background: var(--dd-card); border: 1px solid var(--dd-border);
   border-radius: var(--radius); padding: 1.5rem 1.5rem 1.75rem;
 }
-.card svg { width: 28px; height: 28px; color: var(--dd-magenta-300); margin-bottom: 0.75rem; }
+.card svg { width: 28px; height: 28px; color: var(--dd-indigo-300); margin-bottom: 0.75rem; }
 .card h3 { font-size: 1.15rem; color: var(--fg); }
 .card p { margin: 0; color: #C9C2D1; font-size: 0.98rem; }
 .card .meta { margin-top: 0.9rem; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.78rem; color: var(--dd-mist); }
@@ -155,10 +155,10 @@ section h2 .tick { color: var(--dd-gold-500); }
 /* ---- Ways to help: per-way key/value meta ---- */
 .way ul { margin: 0 0 0.5rem; padding-left: 1.15rem; color: #C9C2D1; }
 .way ul li { margin-bottom: 0.35rem; }
-.way ul li::marker { color: var(--dd-magenta-300); }
+.way ul li::marker { color: var(--dd-indigo-300); }
 .kv { margin: 1.1rem 0 0; }
 .kv > div { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.15rem 0.9rem; padding: 0.5rem 0; border-top: 1px solid var(--dd-border); }
-.kv dt { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dd-mist); padding-top: 0.15rem; }
+.kv dt { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dd-indigo-300); padding-top: 0.15rem; }
 .kv dd { margin: 0; color: #C9C2D1; font-size: 0.95rem; }
 
 /* ---- FAQ ---- */
