@@ -191,6 +191,29 @@ footer a { color: var(--link); }
 .footer__morpc img { width: 100px; height: auto; }
 .footer__text { display: flex; flex-direction: column; gap: 0.4rem; }
 
+/* ---- Stat tiles (What people say) ---- */
+.stats { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); margin-top: 2rem; }
+.stat {
+  background: var(--dd-card); border: 1px solid var(--dd-border);
+  border-radius: var(--radius); padding: 1.6rem 1.25rem; text-align: center;
+}
+.stat__num { font-size: clamp(2.4rem, 6vw, 3.25rem); font-weight: 800; line-height: 1; color: var(--dd-gold-500); letter-spacing: -0.02em; }
+.stat__num small { font-size: 0.42em; font-weight: 700; color: var(--dd-mist); letter-spacing: 0; }
+.stat__label { margin-top: 0.7rem; color: #C9C2D1; font-size: 0.95rem; line-height: 1.4; }
+.stat__label b { color: var(--fg); font-weight: 700; }
+
+/* ---- Pull quotes ---- */
+.quotes { columns: 2; column-gap: 1.25rem; margin-top: 2rem; }
+@media (max-width: 46rem) { .quotes { columns: 1; } }
+.quote {
+  break-inside: avoid; -webkit-column-break-inside: avoid;
+  background: var(--dd-card); border: 1px solid var(--dd-border);
+  border-left: 3px solid var(--dd-magenta-500); border-radius: var(--radius);
+  padding: 1.25rem 1.4rem; margin: 0 0 1.25rem;
+}
+.quote p { margin: 0 0 0.75rem; color: var(--fg); font-size: 1.02rem; }
+.quote cite { color: var(--dd-indigo-300); font-style: normal; font-size: 0.74rem; font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing: 0.08em; text-transform: uppercase; }
+
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
