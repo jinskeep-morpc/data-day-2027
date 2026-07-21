@@ -1,0 +1,1272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Day 2027 · Visual and Color Guide</title>
+<meta name="description" content="Data Day 2027 design brief: the classic Data Day palette, logo usage, and approved color combinations for web and print.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy-100:#E6EBEE; --navy-200:#BFCAD2; --navy-300:#889EAB; --navy-400:#4A6B80;
+  --navy-500:#073451; --navy-600:#05263C; --navy-700:#041C2B;
+  --blue-100:#E6F1F8; --blue-200:#BFDCEE; --blue-300:#89BEDF; --blue-400:#4B9CCE;
+  --blue-500:#0977BC; --blue-600:#07588B; --blue-700:#053F64;
+  --teal-100:#E6F6F5; --teal-200:#BDE8E6; --teal-300:#85D5D0; --teal-400:#45BFB7;
+  --teal-500:#00A79D; --teal-600:#007C74; --teal-700:#005953;
+  --green-100:#F2F8F0; --green-200:#DDECD8; --green-300:#C0DBB7; --green-400:#9FC892;
+  --green-500:#7CB46A; --green-600:#5C854E; --green-700:#425F38;
+  --white:#FFFFFF; --fog:#F2F4F6; --mist:#DDE2E7; --slate:#5F6B75;
+  --ink-soft:#2A3238; --ink:#171C21;
+  --font:'Figtree',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Consolas,monospace;
+  --maxw:74rem;
+  --radius:12px;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; background:var(--fog); color:var(--ink);
+  font-family:var(--font); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+code { font-family:var(--mono); font-size:0.82em; }
+.wrap { max-width:var(--maxw); margin-inline:auto; padding-inline:clamp(1.1rem,4vw,2.5rem); }
+h1,h2,h3,h4 { line-height:1.15; letter-spacing:-0.015em; margin:0 0 0.5em; }
+
+/* ---------- masthead ---------- */
+.masthead { background:var(--navy-500); color:var(--white); padding-block:clamp(2.5rem,6vw,4rem); }
+.masthead .logo { width:clamp(190px,26vw,260px); height:auto; display:block; margin-bottom:2rem; }
+.masthead h1 { font-size:clamp(2rem,5.5vw,3.25rem); font-weight:800; margin:0; }
+.masthead h1 span { color:var(--teal-300); }
+.masthead p { color:var(--navy-200); max-width:56ch; margin:1rem 0 0; font-size:1.08rem; }
+.masthead .meta {
+  display:flex; flex-wrap:wrap; gap:0.4rem 1.75rem; margin:2rem 0 0; padding:1.1rem 0 0;
+  border-top:1px solid #0E4467; list-style:none; font-family:var(--mono);
+  font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--navy-300);
+}
+.masthead .meta b { color:var(--teal-300); font-weight:500; }
+
+/* ---------- structure ---------- */
+section { padding-block:clamp(2.5rem,6vw,4rem); border-bottom:1px solid var(--mist); }
+section:last-of-type { border-bottom:0; }
+.sec-num {
+  font-family:var(--mono); font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--blue-600); margin:0 0 0.6rem;
+}
+section h2 { font-size:clamp(1.5rem,3.5vw,2.1rem); color:var(--navy-500); }
+section h2 .tick { color:var(--teal-600); }
+.lede { max-width:68ch; color:#3D474F; font-size:1.05rem; margin:0 0 2rem; }
+h3 { font-size:1.15rem; color:var(--navy-500); margin-top:2.5rem; }
+h4 { font-size:0.95rem; color:var(--navy-500); margin:0 0 0.6rem; }
+.note {
+  background:var(--blue-100); border-left:4px solid var(--blue-500);
+  padding:0.9rem 1.1rem; border-radius:0 8px 8px 0; margin:1.5rem 0; max-width:72ch;
+}
+.note p { margin:0; font-size:0.95rem; }
+.note p + p { margin-top:0.5rem; }
+
+/* ---------- core swatches ---------- */
+.core { display:grid; gap:1rem; grid-template-columns:1fr; }
+@media (min-width:38rem) { .core { grid-template-columns:repeat(2,1fr); } }
+@media (min-width:60rem) { .core { grid-template-columns:repeat(3,1fr); } }
+.core-swatch {
+  border-radius:var(--radius); padding:1.25rem 1.15rem; min-height:9.5rem;
+  display:flex; flex-direction:column; justify-content:flex-end; gap:0.15rem;
+  border:1px solid rgba(0,0,0,0.08);
+}
+.core-swatch__name { font-weight:800; font-size:1.15rem; letter-spacing:-0.01em; }
+.core-swatch__hex { font-family:var(--mono); font-size:0.8rem; opacity:0.85; }
+.core-swatch__role { font-size:0.82rem; opacity:0.9; margin-top:0.4rem; line-height:1.35; }
+
+/* ---------- scales ---------- */
+.scale { margin-bottom:1.5rem; }
+.scale__row { display:grid; grid-template-columns:repeat(7,1fr); border-radius:10px; overflow:hidden; }
+.step { padding:1.1rem 0.5rem 0.9rem; text-align:center; position:relative; }
+.step b { display:block; font-size:0.85rem; font-weight:700; }
+.step code { font-size:0.66rem; opacity:0.85; }
+.step.is-core::after {
+  content:"CORE"; position:absolute; top:0.35rem; left:50%; transform:translateX(-50%);
+  font-family:var(--mono); font-size:0.52rem; letter-spacing:0.1em; opacity:0.9;
+}
+@media (max-width:44rem) {
+  .scale__row { grid-template-columns:repeat(4,1fr); }
+}
+
+/* ---------- neutrals + viz ---------- */
+.neutrals { display:grid; gap:0.9rem; grid-template-columns:repeat(auto-fit,minmax(14rem,1fr)); }
+@media (min-width:60rem) { .neutrals { grid-template-columns:repeat(3,1fr); } }
+.neutral { display:flex; gap:0.85rem; align-items:center; background:var(--white);
+  border:1px solid var(--mist); border-radius:10px; padding:0.7rem 0.9rem; }
+.neutral__chip { width:2.6rem; height:2.6rem; border-radius:7px; border:1px solid rgba(0,0,0,0.1); flex:none; }
+.neutral__meta { display:flex; flex-direction:column; line-height:1.35; min-width:0; }
+.neutral__meta b { font-size:0.92rem; }
+.neutral__meta code { color:var(--slate); }
+.neutral__meta span { font-size:0.78rem; color:var(--slate); }
+
+.vizgrid { display:grid; gap:0.9rem; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); }
+.viz { background:var(--white); border:1px solid var(--mist); border-radius:10px; padding:0.85rem; }
+.viz__chip { height:2.4rem; border-radius:6px; margin-bottom:0.6rem; }
+.viz b { display:block; font-size:0.85rem; }
+.viz code { color:var(--slate); }
+
+/* ---------- contrast matrix ---------- */
+.matrix-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table.matrix { border-collapse:collapse; width:100%; min-width:44rem; background:var(--white); }
+table.matrix th, table.matrix td { border:1px solid var(--mist); padding:0.5rem 0.6rem; text-align:left; }
+table.matrix thead th { background:var(--navy-500); color:var(--white); font-size:0.82rem; font-weight:700; }
+table.matrix thead th code { color:var(--navy-200); font-weight:400; }
+table.matrix th.rowhead { background:var(--fog); font-weight:600; font-size:0.85rem; white-space:nowrap; }
+table.matrix th.rowhead code { display:block; color:var(--slate); font-weight:400; }
+.dot { display:inline-block; width:0.7rem; height:0.7rem; border-radius:50%; margin-right:0.4rem;
+  border:1px solid rgba(0,0,0,0.15); vertical-align:middle; }
+.chip { display:inline-block; font-family:var(--mono); font-size:0.66rem; letter-spacing:0.02em;
+  padding:0.2rem 0.45rem; border-radius:999px; white-space:nowrap; }
+.chip.pass-aaa { background:var(--green-200); color:var(--green-700); }
+.chip.pass { background:var(--teal-100); color:var(--teal-700); }
+.chip.large { background:#FCEFD5; color:#7A5A12; }
+.chip.fail { background:#F7DEDE; color:#8A2B2B; }
+
+/* ---------- pairings ---------- */
+.pairs { display:grid; gap:1.25rem; align-items:start; grid-template-columns:repeat(auto-fit,minmax(17rem,1fr)); }
+.pair { border:1px solid var(--mist); border-radius:var(--radius); overflow:hidden; background:var(--white); }
+.pair__demo { padding:1.5rem 1.25rem; min-height:8.5rem; display:flex; flex-direction:column; justify-content:center; }
+.pair__demo h5 { margin:0 0 0.35rem; font-size:1.15rem; font-weight:800; letter-spacing:-0.01em; }
+.pair__demo p { margin:0; font-size:0.88rem; }
+.pair__meta { padding:0.85rem 1.1rem; border-top:1px solid var(--mist); }
+.pair__meta b { display:block; font-size:0.88rem; color:var(--navy-500); }
+.pair__meta span { font-size:0.8rem; color:var(--slate); }
+.pair__meta .chip { margin-top:0.45rem; }
+
+/* do / don't */
+.dd { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fit,minmax(16rem,1fr)); }
+.dd__item { border-radius:var(--radius); overflow:hidden; border:1px solid var(--mist); background:var(--white); }
+.dd__demo { padding:1.4rem 1.2rem; font-size:1.02rem; font-weight:600; }
+.dd__label { display:flex; gap:0.5rem; align-items:flex-start; padding:0.8rem 1.1rem;
+  border-top:1px solid var(--mist); font-size:0.85rem; }
+.dd__label .mark { font-weight:800; flex:none; }
+.dd--do .mark { color:var(--green-700); }
+.dd--dont .mark { color:#8A2B2B; }
+
+/* ---------- component mocks ---------- */
+.mock { border:1px solid var(--mist); border-radius:var(--radius); overflow:hidden; background:var(--white); margin-bottom:1.5rem; }
+.mock__cap { padding:0.65rem 1rem; background:var(--fog); border-bottom:1px solid var(--mist);
+  font-family:var(--mono); font-size:0.68rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--slate); }
+.mock__body { padding:0; }
+
+.ui-nav { background:var(--navy-500); display:flex; align-items:center; justify-content:space-between;
+  gap:1rem; padding:0.8rem 1.2rem; flex-wrap:wrap; }
+.ui-nav .logo { width:118px; height:auto; display:block; }
+.ui-nav__year { font-family:var(--mono); font-size:0.72rem; color:var(--teal-300);
+  padding-left:0.55rem; border-left:1px solid #0E4467; margin-left:0.55rem; }
+.ui-nav__links { display:flex; gap:1.1rem; flex-wrap:wrap; }
+.ui-nav__links a { color:var(--white); text-decoration:none; font-weight:600; font-size:0.9rem; }
+.ui-nav__links a.is-active { color:var(--blue-300); }
+.ui-nav__brand { display:flex; align-items:center; }
+
+.ui-hero { background:var(--navy-500); color:var(--white); padding:2.5rem 1.5rem; }
+.ui-hero .eyebrow { font-family:var(--mono); font-size:0.7rem; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--blue-300); margin:0 0 0.9rem; }
+.ui-hero h3 { color:var(--teal-300); font-size:clamp(1.7rem,4.5vw,2.6rem); font-weight:800; margin:0 0 0.4rem; }
+.ui-hero .sub { font-size:1.05rem; font-weight:700; margin:0 0 0.9rem; }
+.ui-hero p { color:var(--navy-200); max-width:44ch; margin:0 0 1.4rem; font-size:0.95rem; }
+.btnrow { display:flex; gap:0.7rem; flex-wrap:wrap; }
+.btn { display:inline-block; border-radius:999px; padding:0.7rem 1.35rem; font-weight:700;
+  font-size:0.92rem; text-decoration:none; border:1.5px solid transparent; }
+.btn--cta { background:var(--teal-500); color:var(--ink); }
+.btn--cta-2 { background:var(--green-500); color:var(--ink); }
+.btn--solid { background:var(--blue-500); color:var(--white); }
+.btn--navy { background:var(--navy-500); color:var(--white); }
+.btn--ghost-dark { background:transparent; color:var(--white); border-color:var(--navy-400); }
+.btn--ghost-light { background:transparent; color:var(--navy-500); border-color:var(--navy-300); }
+
+.ui-page { background:var(--fog); padding:1.5rem; }
+.cardgrid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(12rem,1fr)); }
+.ui-card { background:var(--white); border:1px solid var(--mist); border-radius:10px; padding:1.1rem; }
+.ui-card b { display:block; color:var(--navy-500); font-size:1rem; margin-bottom:0.3rem; }
+.ui-card p { margin:0; font-size:0.86rem; color:#3D474F; }
+.ui-card a { color:var(--blue-600); font-weight:600; font-size:0.85rem; text-decoration:none; }
+.tag { display:inline-block; font-size:0.7rem; font-weight:700; letter-spacing:0.04em;
+  text-transform:uppercase; padding:0.2rem 0.55rem; border-radius:999px; margin-right:0.3rem; }
+.tag--gis { background:var(--blue-100); color:var(--blue-700); }
+.tag--ai { background:var(--teal-100); color:var(--teal-700); }
+.tag--eval { background:var(--green-200); color:var(--green-700); }
+
+.stats { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr)); }
+.stat { background:var(--white); border:1px solid var(--mist); border-radius:10px;
+  padding:1.2rem 0.9rem; text-align:center; }
+.stat__num { font-size:2.2rem; font-weight:800; line-height:1; color:var(--teal-600); }
+.stat__num small { font-size:0.42em; color:var(--slate); }
+.stat__label { margin-top:0.5rem; font-size:0.82rem; color:#3D474F; }
+.stat__label b { color:var(--ink); }
+
+.ui-table { width:100%; border-collapse:collapse; font-size:0.86rem; }
+.ui-table th, .ui-table td { border:1px solid var(--mist); padding:0.5rem 0.7rem; text-align:left; }
+.ui-table thead th { background:var(--blue-600); color:var(--white); }
+.ui-table tbody tr:nth-child(even) td { background:var(--fog); }
+
+.ui-dark { background:var(--ink); color:var(--fog); padding:1.5rem; }
+.ui-dark h4 { color:var(--fog); margin-bottom:0.4rem; }
+.ui-dark p { margin:0 0 0.9rem; color:var(--navy-200); font-size:0.9rem; }
+.ui-dark a { color:var(--blue-300); font-weight:600; }
+.ui-dark .stat { background:var(--ink-soft); border-color:#33403C; }
+.ui-dark .stat__num { color:var(--teal-300); }
+.ui-dark .stat__label { color:var(--navy-200); }
+.ui-dark .stat__label b { color:var(--fog); }
+
+/* ---------- print mocks ---------- */
+.printgrid { display:grid; gap:1.5rem; align-items:start; grid-template-columns:repeat(auto-fit,minmax(17rem,1fr)); }
+.sheet { background:var(--white); border:1px solid var(--mist); border-radius:8px;
+  box-shadow:0 6px 20px rgba(7,52,81,0.08); overflow:hidden; }
+.sheet__cap { padding:0.6rem 0.9rem; background:var(--fog); border-bottom:1px solid var(--mist);
+  font-family:var(--mono); font-size:0.66rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--slate); }
+
+/* letterhead / one-pager */
+.pg { padding:1.4rem 1.3rem; font-size:0.8rem; }
+.pg__head { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:0.9rem; }
+.pg__head .logo { width:112px; height:auto; }
+.pg__head .morpc { font-family:var(--mono); font-size:0.55rem; color:var(--slate); text-align:right; line-height:1.3; }
+.pg h5 { font-size:1.15rem; font-weight:800; color:var(--navy-500); margin:0 0 0.5rem;
+  padding-bottom:0.45rem; border-bottom:3px solid var(--teal-500); }
+.pg h6 { font-size:0.82rem; color:var(--blue-600); margin:0.9rem 0 0.35rem;
+  padding-bottom:0.2rem; border-bottom:1px solid var(--mist); }
+.pg p { margin:0 0 0.5rem; color:#3D474F; line-height:1.5; }
+.pg .bar { height:0.5rem; background:var(--fog); border-radius:3px; margin-bottom:0.3rem; }
+.pg .bar.s { width:72%; }
+
+/* brochure cover */
+.cover { background:var(--navy-500); color:var(--white); padding:1.6rem 1.4rem; min-height:19rem;
+  display:flex; flex-direction:column; }
+.cover .logo { width:130px; height:auto; margin-bottom:auto; }
+.cover__eyebrow { font-family:var(--mono); font-size:0.6rem; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--teal-300); margin:0 0 0.5rem; }
+.cover h5 { font-size:1.6rem; font-weight:800; margin:0 0 0.45rem; line-height:1.1; }
+.cover p { margin:0 0 1.1rem; color:var(--navy-200); font-size:0.82rem; max-width:26ch; }
+.cover__rule { height:5px; width:100%; display:flex; border-radius:3px; overflow:hidden; margin-bottom:1rem; }
+.cover__rule i { flex:1; }
+
+/* badge */
+.badge { padding:0; background:var(--white); }
+.badge__top { background:var(--navy-500); padding:0.8rem 1rem; display:flex; justify-content:space-between; align-items:center; }
+.badge__top .logo { width:96px; height:auto; }
+.badge__top span { font-family:var(--mono); font-size:0.58rem; color:var(--teal-300); letter-spacing:0.1em; }
+.badge__body { padding:1.5rem 1rem; text-align:center; }
+.badge__name { font-size:1.5rem; font-weight:800; color:var(--ink); margin:0 0 0.15rem; }
+.badge__org { font-size:0.85rem; color:var(--slate); margin:0 0 1rem; }
+.badge__role { display:inline-block; background:var(--teal-500); color:var(--ink);
+  font-weight:700; font-size:0.75rem; letter-spacing:0.06em; text-transform:uppercase;
+  padding:0.3rem 0.9rem; border-radius:999px; }
+.badge__foot { height:0.5rem; display:flex; }
+.badge__foot i { flex:1; }
+
+/* slide */
+.slide { background:var(--white); aspect-ratio:16/9; display:flex; flex-direction:column;
+  justify-content:center; padding:1.5rem; position:relative; }
+.slide__bar { position:absolute; left:0; top:0; bottom:0; width:0.5rem; background:var(--teal-500); }
+.slide h5 { font-size:1.3rem; font-weight:800; color:var(--navy-500); margin:0 0 0.4rem; }
+.slide p { margin:0; font-size:0.82rem; color:var(--slate); }
+.slide .logo { width:88px; height:auto; position:absolute; right:1.2rem; bottom:1.1rem; }
+
+/* social */
+.social { background:var(--ink); color:var(--fog); aspect-ratio:1/1; padding:1.5rem;
+  display:flex; flex-direction:column; }
+.social .logo { width:120px; height:auto; margin-bottom:auto; }
+.social__date { font-family:var(--mono); font-size:0.62rem; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--teal-300); margin:0 0 0.4rem; }
+.social h5 { font-size:1.5rem; font-weight:800; margin:0 0 0.5rem; line-height:1.12; }
+.social p { margin:0; font-size:0.78rem; color:var(--navy-200); }
+
+/* ---------- logo usage ---------- */
+.logos { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); }
+.logobox { border:1px solid var(--mist); border-radius:var(--radius); overflow:hidden; background:var(--white); }
+.logobox__demo { padding:2rem 1.5rem; display:flex; align-items:center; justify-content:center; min-height:8.5rem; }
+.logobox__demo .logo { width:170px; height:auto; }
+.logobox__demo .logo--vert { width:110px; }
+.logobox__cap { padding:0.75rem 1rem; border-top:1px solid var(--mist); font-size:0.83rem; }
+.logobox__cap b { display:block; color:var(--navy-500); }
+.logobox__cap span { color:var(--slate); }
+.clearspace { position:relative; padding:2rem; }
+.clearspace .box { border:1px dashed var(--blue-400); padding:1.15rem; display:inline-block; }
+.clearspace .logo { width:150px; height:auto; display:block; }
+
+/* ---------- charts ---------- */
+.charts { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fit,minmax(17rem,1fr)); }
+.chart { background:var(--white); border:1px solid var(--mist); border-radius:var(--radius); padding:1.1rem; }
+.chart h4 { margin-bottom:0.9rem; }
+.chart svg { width:100%; height:auto; display:block; }
+.legend { display:flex; flex-wrap:wrap; gap:0.35rem 1rem; margin-top:0.8rem;
+  font-size:0.78rem; color:#3D474F; }
+.legend i { display:inline-block; width:0.75rem; height:0.75rem; border-radius:3px;
+  margin-right:0.35rem; vertical-align:-1px; }
+
+/* ---------- reference ---------- */
+pre { background:var(--ink); color:var(--fog); padding:1.1rem 1.25rem; border-radius:10px;
+  overflow-x:auto; font-family:var(--mono); font-size:0.78rem; line-height:1.65; }
+pre .c { color:var(--navy-300); }
+pre .v { color:var(--teal-300); }
+
+footer { background:var(--navy-500); color:var(--navy-200); padding-block:2.5rem; }
+footer .wrap { display:flex; flex-wrap:wrap; gap:1.25rem 2rem; justify-content:space-between; align-items:center; }
+footer .logo { width:135px; height:auto; }
+footer p { margin:0; font-size:0.85rem; }
+footer a { color:var(--blue-300); }
+
+ul.plain { margin:0 0 1rem; padding-left:1.15rem; max-width:70ch; }
+ul.plain li { margin-bottom:0.45rem; }
+ul.plain li::marker { color:var(--teal-600); }
+
+@media print {
+  body { background:#fff; }
+  section { break-inside:avoid; page-break-inside:avoid; }
+  .masthead, footer { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <svg class="logo logo--white" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#fff" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#fff" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#fff" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M54.49,107.79c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M107.58,124.99c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M185.03,75.61c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+    <h1>Visual and <span>Color Guide</span></h1>
+    <p>The classic Data Day palette, retained for the 5th annual event. This guide covers the
+    core colors, the extended scales, which combinations are approved, and how they apply to
+    web and print materials.</p>
+    <ul class="meta">
+      <li>Version <b>1.0</b></li>
+      <li>Updated <b>21 July 2026</b></li>
+      <li>Owner <b>MORPC / Regional Data Roundtable</b></li>
+      <li>Tokens <b>Design/palette.css</b></li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ============================ 1 ============================ -->
+<section>
+  <p class="sec-num">01 · The decision</p>
+  <h2>What changed, and what didn't<span class="tick">.</span></h2>
+  <p class="lede">Design review chose continuity. Data Day keeps its established palette and
+  logo for the 5th annual event, so the anniversary framing carries the message rather than a
+  rebrand competing with it. The four brand colors below are taken directly from the logo
+  artwork, so marks drop into any layout without a color correction step.</p>
+  <div class="note">
+    <p><b>Two colors were added</b>, because four brand colors cannot build a document on
+    their own: a dark muted black for body text and reversed surfaces, and a very light grey
+    to give white cards something to sit on.</p>
+    <p>Nothing else was introduced. Every tint and shade in this guide is derived from the
+    four core hexes.</p>
+  </div>
+</section>
+
+<!-- ============================ 2 ============================ -->
+<section>
+  <p class="sec-num">02 · Core palette</p>
+  <h2>Six colors do all the work<span class="tick">.</span></h2>
+  <p class="lede">Dark Blue carries structure. Blue carries anything interactive. Teal and
+  Green are accents, held back so a single call to action stays obvious on any page. Ink and
+  Fog are the surfaces.</p>
+  <div class="core">
+<div class="core-swatch" style="background:#073451;color:#FFFFFF">
+      <span class="core-swatch__name">Dark Blue</span>
+      <span class="core-swatch__hex">#073451</span>
+      <span class="core-swatch__role">Primary. Headlines, nav, footers, dark bands.</span>
+    </div>
+<div class="core-swatch" style="background:#0977BC;color:#FFFFFF">
+      <span class="core-swatch__name">Blue</span>
+      <span class="core-swatch__hex">#0977BC</span>
+      <span class="core-swatch__role">Secondary. Links, buttons, section accents.</span>
+    </div>
+<div class="core-swatch" style="background:#00A79D;color:#171C21">
+      <span class="core-swatch__name">Teal</span>
+      <span class="core-swatch__hex">#00A79D</span>
+      <span class="core-swatch__role">Accent. Primary CTA fill, highlights, chart series.</span>
+    </div>
+<div class="core-swatch" style="background:#7CB46A;color:#171C21">
+      <span class="core-swatch__name">Green</span>
+      <span class="core-swatch__hex">#7CB46A</span>
+      <span class="core-swatch__role">Accent. Secondary CTA, tags, chart series.</span>
+    </div>
+<div class="core-swatch" style="background:#171C21;color:#FFFFFF">
+      <span class="core-swatch__name">Ink</span>
+      <span class="core-swatch__hex">#171C21</span>
+      <span class="core-swatch__role">Dark muted black. Body text, reversed surfaces.</span>
+    </div>
+<div class="core-swatch" style="background:#F2F4F6;color:#171C21">
+      <span class="core-swatch__name">Fog</span>
+      <span class="core-swatch__hex">#F2F4F6</span>
+      <span class="core-swatch__role">Very light grey. Page background, card fill.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 3 ============================ -->
+<section>
+  <p class="sec-num">03 · Extended scales</p>
+  <h2>100 to 700<span class="tick">.</span></h2>
+  <p class="lede">Each brand color extends to a seven-step scale, with 500 as the core hex.
+  Tints (100 to 400) are fills, washes, and text on dark surfaces. Shades (600 to 700) are
+  text, links, and pressed states on light surfaces. This is where the accessibility work
+  happens: the bright accents cannot carry text on white, and the 600 and 700 steps exist to
+  cover exactly that.</p>
+<div class="scale"><h4>Dark Blue</h4><div class="scale__row"><div class="step" style="background:#E6EBEE;color:#171C21"><b>100</b><code>#E6EBEE</code></div><div class="step" style="background:#BFCAD2;color:#171C21"><b>200</b><code>#BFCAD2</code></div><div class="step" style="background:#889EAB;color:#171C21"><b>300</b><code>#889EAB</code></div><div class="step" style="background:#4A6B80;color:#FFFFFF"><b>400</b><code>#4A6B80</code></div><div class="step is-core" style="background:#073451;color:#FFFFFF"><b>500</b><code>#073451</code></div><div class="step" style="background:#05263C;color:#FFFFFF"><b>600</b><code>#05263C</code></div><div class="step" style="background:#041C2B;color:#FFFFFF"><b>700</b><code>#041C2B</code></div></div></div>
+<div class="scale"><h4>Blue</h4><div class="scale__row"><div class="step" style="background:#E6F1F8;color:#171C21"><b>100</b><code>#E6F1F8</code></div><div class="step" style="background:#BFDCEE;color:#171C21"><b>200</b><code>#BFDCEE</code></div><div class="step" style="background:#89BEDF;color:#171C21"><b>300</b><code>#89BEDF</code></div><div class="step" style="background:#4B9CCE;color:#171C21"><b>400</b><code>#4B9CCE</code></div><div class="step is-core" style="background:#0977BC;color:#FFFFFF"><b>500</b><code>#0977BC</code></div><div class="step" style="background:#07588B;color:#FFFFFF"><b>600</b><code>#07588B</code></div><div class="step" style="background:#053F64;color:#FFFFFF"><b>700</b><code>#053F64</code></div></div></div>
+<div class="scale"><h4>Teal</h4><div class="scale__row"><div class="step" style="background:#E6F6F5;color:#171C21"><b>100</b><code>#E6F6F5</code></div><div class="step" style="background:#BDE8E6;color:#171C21"><b>200</b><code>#BDE8E6</code></div><div class="step" style="background:#85D5D0;color:#171C21"><b>300</b><code>#85D5D0</code></div><div class="step" style="background:#45BFB7;color:#171C21"><b>400</b><code>#45BFB7</code></div><div class="step is-core" style="background:#00A79D;color:#171C21"><b>500</b><code>#00A79D</code></div><div class="step" style="background:#007C74;color:#FFFFFF"><b>600</b><code>#007C74</code></div><div class="step" style="background:#005953;color:#FFFFFF"><b>700</b><code>#005953</code></div></div></div>
+<div class="scale"><h4>Green</h4><div class="scale__row"><div class="step" style="background:#F2F8F0;color:#171C21"><b>100</b><code>#F2F8F0</code></div><div class="step" style="background:#DDECD8;color:#171C21"><b>200</b><code>#DDECD8</code></div><div class="step" style="background:#C0DBB7;color:#171C21"><b>300</b><code>#C0DBB7</code></div><div class="step" style="background:#9FC892;color:#171C21"><b>400</b><code>#9FC892</code></div><div class="step is-core" style="background:#7CB46A;color:#171C21"><b>500</b><code>#7CB46A</code></div><div class="step" style="background:#5C854E;color:#FFFFFF"><b>600</b><code>#5C854E</code></div><div class="step" style="background:#425F38;color:#FFFFFF"><b>700</b><code>#425F38</code></div></div></div>
+
+  <h3>Neutrals</h3>
+  <div class="neutrals">
+<div class="neutral">
+      <div class="neutral__chip" style="background:#FFFFFF"></div>
+      <div class="neutral__meta"><b>White</b><code>#FFFFFF</code><span>Card fill on Fog, text on dark fills</span></div>
+    </div>
+<div class="neutral">
+      <div class="neutral__chip" style="background:#F2F4F6"></div>
+      <div class="neutral__meta"><b>Fog</b><code>#F2F4F6</code><span>Page background</span></div>
+    </div>
+<div class="neutral">
+      <div class="neutral__chip" style="background:#DDE2E7"></div>
+      <div class="neutral__meta"><b>Mist</b><code>#DDE2E7</code><span>Hairlines, dividers, table borders</span></div>
+    </div>
+<div class="neutral">
+      <div class="neutral__chip" style="background:#5F6B75"></div>
+      <div class="neutral__meta"><b>Slate</b><code>#5F6B75</code><span>Captions, metadata, disabled</span></div>
+    </div>
+<div class="neutral">
+      <div class="neutral__chip" style="background:#2A3238"></div>
+      <div class="neutral__meta"><b>Ink Soft</b><code>#2A3238</code><span>Elevated dark surface</span></div>
+    </div>
+<div class="neutral">
+      <div class="neutral__chip" style="background:#171C21"></div>
+      <div class="neutral__meta"><b>Ink</b><code>#171C21</code><span>Body text, dark surfaces</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 4 ============================ -->
+<section>
+  <p class="sec-num">04 · Accessibility</p>
+  <h2>What may be text on what<span class="tick">.</span></h2>
+  <p class="lede">Every ratio below is computed against the WCAG 2.1 formula. AA needs 4.5:1
+  for normal text and 3:1 for large text and UI. AAA needs 7:1. Read this table before
+  choosing a text color: it is the fastest way to avoid the two traps in this palette.</p>
+
+  <div class="matrix-scroll">
+    <table class="matrix">
+      <thead><tr><th>Text color</th><th>White<br><code>#FFFFFF</code></th><th>Fog<br><code>#F2F4F6</code></th><th>Dark Blue<br><code>#073451</code></th><th>Ink<br><code>#171C21</code></th></tr></thead>
+      <tbody>
+<tr><th class="rowhead"><span class="dot" style="background:#171C21"></span>Ink<code>#171C21</code></th><td><span class="chip pass-aaa">17.15:1 · AAA</span></td><td><span class="chip pass-aaa">15.55:1 · AAA</span></td><td><span class="chip fail">1.32:1 · Fail</span></td><td><span class="chip fail">1.00:1 · Fail</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#5F6B75"></span>Slate<code>#5F6B75</code></th><td><span class="chip pass">5.46:1 · AA</span></td><td><span class="chip pass">4.95:1 · AA</span></td><td><span class="chip fail">2.38:1 · Fail</span></td><td><span class="chip large">3.14:1 · Large only</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#FFFFFF"></span>White<code>#FFFFFF</code></th><td><span class="chip fail">1.00:1 · Fail</span></td><td><span class="chip fail">1.10:1 · Fail</span></td><td><span class="chip pass-aaa">12.97:1 · AAA</span></td><td><span class="chip pass-aaa">17.15:1 · AAA</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#F2F4F6"></span>Fog<code>#F2F4F6</code></th><td><span class="chip fail">1.10:1 · Fail</span></td><td><span class="chip fail">1.00:1 · Fail</span></td><td><span class="chip pass-aaa">11.76:1 · AAA</span></td><td><span class="chip pass-aaa">15.55:1 · AAA</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#073451"></span>Dark Blue 500<code>#073451</code></th><td><span class="chip pass-aaa">12.97:1 · AAA</span></td><td><span class="chip pass-aaa">11.76:1 · AAA</span></td><td><span class="chip fail">1.00:1 · Fail</span></td><td><span class="chip fail">1.32:1 · Fail</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#889EAB"></span>Dark Blue 300<code>#889EAB</code></th><td><span class="chip fail">2.79:1 · Fail</span></td><td><span class="chip fail">2.53:1 · Fail</span></td><td><span class="chip pass">4.65:1 · AA</span></td><td><span class="chip pass">6.15:1 · AA</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#0977BC"></span>Blue 500<code>#0977BC</code></th><td><span class="chip pass">4.80:1 · AA</span></td><td><span class="chip large">4.35:1 · Large only</span></td><td><span class="chip fail">2.70:1 · Fail</span></td><td><span class="chip large">3.57:1 · Large only</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#07588B"></span>Blue 600<code>#07588B</code></th><td><span class="chip pass-aaa">7.56:1 · AAA</span></td><td><span class="chip pass">6.86:1 · AA</span></td><td><span class="chip fail">1.72:1 · Fail</span></td><td><span class="chip fail">2.27:1 · Fail</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#89BEDF"></span>Blue 300<code>#89BEDF</code></th><td><span class="chip fail">2.00:1 · Fail</span></td><td><span class="chip fail">1.81:1 · Fail</span></td><td><span class="chip pass">6.48:1 · AA</span></td><td><span class="chip pass-aaa">8.57:1 · AAA</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#00A79D"></span>Teal 500<code>#00A79D</code></th><td><span class="chip fail">2.99:1 · Fail</span></td><td><span class="chip fail">2.72:1 · Fail</span></td><td><span class="chip large">4.33:1 · Large only</span></td><td><span class="chip pass">5.73:1 · AA</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#007C74"></span>Teal 600<code>#007C74</code></th><td><span class="chip pass">5.08:1 · AA</span></td><td><span class="chip pass">4.61:1 · AA</span></td><td><span class="chip fail">2.55:1 · Fail</span></td><td><span class="chip large">3.38:1 · Large only</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#85D5D0"></span>Teal 300<code>#85D5D0</code></th><td><span class="chip fail">1.69:1 · Fail</span></td><td><span class="chip fail">1.53:1 · Fail</span></td><td><span class="chip pass-aaa">7.67:1 · AAA</span></td><td><span class="chip pass-aaa">10.15:1 · AAA</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#7CB46A"></span>Green 500<code>#7CB46A</code></th><td><span class="chip fail">2.44:1 · Fail</span></td><td><span class="chip fail">2.22:1 · Fail</span></td><td><span class="chip pass">5.31:1 · AA</span></td><td><span class="chip pass-aaa">7.02:1 · AAA</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#425F38"></span>Green 700<code>#425F38</code></th><td><span class="chip pass-aaa">7.18:1 · AAA</span></td><td><span class="chip pass">6.51:1 · AA</span></td><td><span class="chip fail">1.81:1 · Fail</span></td><td><span class="chip fail">2.39:1 · Fail</span></td></tr>
+<tr><th class="rowhead"><span class="dot" style="background:#C0DBB7"></span>Green 300<code>#C0DBB7</code></th><td><span class="chip fail">1.49:1 · Fail</span></td><td><span class="chip fail">1.35:1 · Fail</span></td><td><span class="chip pass-aaa">8.68:1 · AAA</span></td><td><span class="chip pass-aaa">11.48:1 · AAA</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>The two traps</h3>
+  <ul class="plain">
+    <li><b>Teal 500 and Green 500 cannot be text on light backgrounds.</b> They land at
+    2.99:1 and 2.44:1 on white. They are fill colors there. For
+    teal text use Teal 600, for green text use Green 700.</li>
+    <li><b>Blue 500 is not a link color.</b> On the Fog page background it is
+    4.35:1 and misses AA. Links on light use Blue 600
+    (7.56:1 on white). On dark, Blue 500 drops to 3.57:1, so links
+    there use Blue 300 (8.57:1 on Ink).</li>
+  </ul>
+  <div class="note">
+    <p><b>On the Dark Blue band, step accents up one stop.</b> Teal 500 on Dark Blue is only
+    4.33:1, which is large-text and UI only. Teal 300 on the same band is
+    7.67:1 and is safe for any text size.</p>
+  </div>
+</section>
+
+<!-- ============================ 5 ============================ -->
+<section>
+  <p class="sec-num">05 · Approved combinations</p>
+  <h2>Pairings that always work<span class="tick">.</span></h2>
+  <p class="lede">Five combinations cover nearly every layout. Each is shown as it would
+  actually render, with its measured contrast.</p>
+
+  <div class="pairs">
+    <div class="pair">
+      <div class="pair__demo" style="background:#073451;color:#FFFFFF">
+        <h5>Plotting What's Next</h5>
+        <p style="color:#BFCAD2">Headers, nav, footers, hero bands.</p>
+      </div>
+      <div class="pair__meta"><b>Dark Blue + White</b>
+        <span>The primary structural pairing. Use the White logo lockup here.</span>
+        <span class="chip pass-aaa">12.97:1 · AAA</span></div>
+    </div>
+
+    <div class="pair">
+      <div class="pair__demo" style="background:#F2F4F6;color:#171C21">
+        <h5>Session descriptions</h5>
+        <p style="color:#5F6B75">Long-form body copy, agendas, FAQs.</p>
+      </div>
+      <div class="pair__meta"><b>Fog + Ink</b>
+        <span>The default reading surface. Slate for captions and metadata.</span>
+        <span class="chip pass-aaa">15.55:1 · AAA</span></div>
+    </div>
+
+    <div class="pair">
+      <div class="pair__demo" style="background:#00A79D;color:#171C21">
+        <h5>Register now</h5>
+        <p>The single act-on-this fill.</p>
+      </div>
+      <div class="pair__meta"><b>Teal + Ink</b>
+        <span>Primary CTA. Ink text, never white. Green + Ink is the quieter second CTA.</span>
+        <span class="chip pass">5.73:1 · AA</span></div>
+    </div>
+
+    <div class="pair">
+      <div class="pair__demo" style="background:#E6F1F8;color:#053F64">
+        <h5>Proposals close 30 Oct</h5>
+        <p style="color:#07588B">Low-weight emphasis inside body copy.</p>
+      </div>
+      <div class="pair__meta"><b>Blue 100 wash + Blue 700</b>
+        <span>Callouts and tags that lift off the page without a heavy fill.</span>
+        <span class="chip pass-aaa">9.63:1 · AAA</span></div>
+    </div>
+
+    <div class="pair">
+      <div class="pair__demo" style="background:#171C21;color:#F2F4F6">
+        <h5>Five years forward</h5>
+        <p style="color:#89BEDF">Reversed sections and the website.</p>
+      </div>
+      <div class="pair__meta"><b>Ink + Fog</b>
+        <span>Deep reversed surface. Accents step up to the 300 tints.</span>
+        <span class="chip pass-aaa">15.55:1 · AAA</span></div>
+    </div>
+
+    <div class="pair">
+      <div class="pair__demo" style="background:#FFFFFF;color:#073451">
+        <h5>Data Day 2027</h5>
+        <p style="color:#07588B">Print documents and one-pagers.</p>
+      </div>
+      <div class="pair__meta"><b>White + Dark Blue</b>
+        <span>The paper default. Blue 600 for headings and links.</span>
+        <span class="chip pass-aaa">12.97:1 · AAA</span></div>
+    </div>
+  </div>
+
+  <h3>Do and don't</h3>
+  <div class="dd">
+    <div class="dd__item dd--do">
+      <div class="dd__demo" style="background:#FFFFFF;color:#007C74">Teal 600 as text on white</div>
+      <div class="dd__label"><span class="mark">Do</span>
+        <span>2.99:1 becomes 5.08:1 by stepping to the 600 shade. Passes AA.</span></div>
+    </div>
+    <div class="dd__item dd--dont">
+      <div class="dd__demo" style="background:#FFFFFF;color:#00A79D">Teal 500 as text on white</div>
+      <div class="dd__label"><span class="mark">Don't</span>
+        <span>2.99:1. Fails at every text size. Teal 500 is a fill on light surfaces.</span></div>
+    </div>
+    <div class="dd__item dd--do">
+      <div class="dd__demo" style="background:#00A79D;color:#171C21">Ink text on a Teal button</div>
+      <div class="dd__label"><span class="mark">Do</span>
+        <span>5.73:1. The accents are bright, so they take dark text.</span></div>
+    </div>
+    <div class="dd__item dd--dont">
+      <div class="dd__demo" style="background:#00A79D;color:#FFFFFF">White text on a Teal button</div>
+      <div class="dd__label"><span class="mark">Don't</span>
+        <span>2.99:1. If a teal button needs white text, use Teal 600
+        (5.08:1).</span></div>
+    </div>
+    <div class="dd__item dd--do">
+      <div class="dd__demo" style="background:#073451;color:#85D5D0">Teal 300 on the Dark Blue band</div>
+      <div class="dd__label"><span class="mark">Do</span>
+        <span>7.67:1. Accents step up one stop on the navy band.</span></div>
+    </div>
+    <div class="dd__item dd--dont">
+      <div class="dd__demo" style="background:#073451;color:#00A79D">Teal 500 on the Dark Blue band</div>
+      <div class="dd__label"><span class="mark">Don't</span>
+        <span>4.33:1. Large text and UI only, never body copy.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 6 ============================ -->
+<section>
+  <p class="sec-num">06 · Web</p>
+  <h2>On screen<span class="tick">.</span></h2>
+  <p class="lede">The Data Day website uses dark surfaces: Dark Blue bands for nav, hero, and
+  feature sections, with an Ink page between them. These are the live components.</p>
+
+  <div class="mock">
+    <div class="mock__cap">Navigation · Dark Blue band, White logo, Blue 300 for the current page</div>
+    <div class="mock__body">
+      <div class="ui-nav">
+        <span class="ui-nav__brand"><svg class="logo logo--white" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#fff" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#fff" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#fff" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M54.49,107.79c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M107.58,124.99c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M185.03,75.61c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg><span class="ui-nav__year">2027</span></span>
+        <span class="ui-nav__links">
+          <a href="#">Program</a><a href="#">Get Involved</a>
+          <a href="#">Sponsors</a><a href="#" class="is-active">What People Say</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mock">
+    <div class="mock__cap">Hero · Teal 300 headline, Blue 300 eyebrow, Teal 500 CTA with Ink text</div>
+    <div class="mock__body">
+      <div class="ui-hero">
+        <p class="eyebrow">The 5th Annual Data Day · Central Ohio</p>
+        <h3>Plotting What's Next</h3>
+        <p class="sub">Five years forward for Central Ohio's data community</p>
+        <p>A one-day conference on better use of data, for local government, nonprofits,
+        education, and civic-minded business.</p>
+        <div class="btnrow">
+          <a class="btn btn--cta" href="#">Register</a>
+          <a class="btn btn--ghost-dark" href="#">See the program</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mock">
+    <div class="mock__cap">Buttons · dark surface above, light surface below</div>
+    <div class="mock__body">
+      <div style="background:#073451;padding:1.25rem">
+        <div class="btnrow">
+          <a class="btn btn--cta" href="#">Register</a>
+          <a class="btn btn--cta-2" href="#">Submit a proposal</a>
+          <a class="btn btn--ghost-dark" href="#">Learn more</a>
+        </div>
+      </div>
+      <div style="background:#F2F4F6;padding:1.25rem;border-top:1px solid #DDE2E7">
+        <div class="btnrow">
+          <a class="btn btn--navy" href="#">Register</a>
+          <a class="btn btn--solid" href="#">Sponsor Data Day</a>
+          <a class="btn btn--ghost-light" href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mock">
+    <div class="mock__cap">Cards, tags, and links · white cards on Fog, Blue 600 links</div>
+    <div class="mock__body">
+      <div class="ui-page">
+        <div class="cardgrid">
+          <div class="ui-card">
+            <span class="tag tag--gis">GIS</span>
+            <b style="margin-top:0.55rem">Mapping for decisions</b>
+            <p>How local governments put spatial data in front of decision makers.</p>
+            <a href="#">Session details &rarr;</a>
+          </div>
+          <div class="ui-card">
+            <span class="tag tag--ai">Responsible AI</span>
+            <b style="margin-top:0.55rem">AI in the public sector</b>
+            <p>What responsible adoption looks like when the stakes are public trust.</p>
+            <a href="#">Session details &rarr;</a>
+          </div>
+          <div class="ui-card">
+            <span class="tag tag--eval">Evaluation</span>
+            <b style="margin-top:0.55rem">Did the program work?</b>
+            <p>Program evaluation methods for nonprofits and local government.</p>
+            <a href="#">Session details &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mock">
+    <div class="mock__cap">Stat tiles · Teal 600 on light, Teal 300 on dark</div>
+    <div class="mock__body">
+      <div class="ui-page">
+        <div class="stats">
+          <div class="stat"><div class="stat__num">~200</div><div class="stat__label"><b>Attendees</b> each year</div></div>
+          <div class="stat"><div class="stat__num">75<small>+</small></div><div class="stat__label"><b>Organizations</b> represented</div></div>
+          <div class="stat"><div class="stat__num">16</div><div class="stat__label"><b>Breakouts</b> in a day</div></div>
+          <div class="stat"><div class="stat__num">4.4<small>/5</small></div><div class="stat__label"><b>Attendee rating</b>, 2026</div></div>
+        </div>
+      </div>
+      <div class="ui-dark">
+        <div class="stats">
+          <div class="stat"><div class="stat__num">~200</div><div class="stat__label"><b>Attendees</b> each year</div></div>
+          <div class="stat"><div class="stat__num">75<small>+</small></div><div class="stat__label"><b>Organizations</b> represented</div></div>
+          <div class="stat"><div class="stat__num">16</div><div class="stat__label"><b>Breakouts</b> in a day</div></div>
+          <div class="stat"><div class="stat__num">4.4<small>/5</small></div><div class="stat__label"><b>Attendee rating</b>, 2026</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mock">
+    <div class="mock__cap">Tables · Blue 600 header, Fog zebra striping, Mist borders</div>
+    <div class="mock__body">
+      <table class="ui-table">
+        <thead><tr><th>Time</th><th>Session</th><th>Track</th><th>Room</th></tr></thead>
+        <tbody>
+          <tr><td>9:15</td><td>Opening keynote</td><td>Plenary</td><td>Main hall</td></tr>
+          <tr><td>10:30</td><td>Mapping for decisions</td><td>GIS</td><td>A</td></tr>
+          <tr><td>10:30</td><td>AI in the public sector</td><td>Responsible AI</td><td>B</td></tr>
+          <tr><td>11:30</td><td>Did the program work?</td><td>Evaluation</td><td>C</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 7 ============================ -->
+<section>
+  <p class="sec-num">07 · Print</p>
+  <h2>On paper<span class="tick">.</span></h2>
+  <p class="lede">Print flips the default: white paper, Dark Blue titles, Blue 600 section
+  headings, Ink body. Teal appears as rules and accent fills rather than large areas, which
+  keeps ink coverage sane and reproduces reliably on office printers.</p>
+
+  <div class="printgrid">
+    <div class="sheet">
+      <div class="sheet__cap">One-pager / FAQ / agenda</div>
+      <div class="pg">
+        <div class="pg__head">
+          <svg class="logo logo--primary" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#073451" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#073451" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#073451" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#073451" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M55.59,108.67c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M108.69,125.87c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M186.13,76.49c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+          <span class="morpc">MID-OHIO REGIONAL<br>PLANNING COMMISSION</span>
+        </div>
+        <h5>Champions: Frequently Asked Questions</h5>
+        <h6>About the role</h6>
+        <p><b>What is a Data Day Champion?</b> A member of Central Ohio's data community who
+        helps make Data Day happen.</p>
+        <div class="bar"></div><div class="bar"></div><div class="bar s"></div>
+        <h6>Time and commitment</h6>
+        <p><b>How much time does this take?</b> Most ways to help take an hour or two.</p>
+        <div class="bar"></div><div class="bar s"></div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet__cap">Sponsorship brochure cover</div>
+      <div class="cover">
+        <svg class="logo logo--white" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#fff" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#fff" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#fff" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M54.49,107.79c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M107.58,124.99c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M185.03,75.61c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+        <div>
+          <p class="cover__eyebrow">5th Annual · 16 February 2027</p>
+          <h5>Sponsor Data Day 2027</h5>
+          <p>Put your organization in front of 200 data professionals from across the region.</p>
+          <div class="cover__rule">
+            <i style="background:#0977BC"></i><i style="background:#00A79D"></i><i style="background:#7CB46A"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet__cap">Name badge</div>
+      <div class="badge">
+        <div class="badge__top"><svg class="logo logo--white" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#fff" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#fff" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#fff" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M54.49,107.79c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M107.58,124.99c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M185.03,75.61c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg><span>2027</span></div>
+        <div class="badge__body">
+          <p class="badge__name">Jordan Inskeep</p>
+          <p class="badge__org">Mid-Ohio Regional Planning Commission</p>
+          <span class="badge__role">Champion</span>
+        </div>
+        <div class="badge__foot">
+          <i style="background:#073451"></i><i style="background:#0977BC"></i>
+          <i style="background:#00A79D"></i><i style="background:#7CB46A"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet__cap">Presentation slide (16:9)</div>
+      <div class="slide">
+        <div class="slide__bar"></div>
+        <h5>Regional Data Agenda 2026 to 2028</h5>
+        <p>Four focus areas, four action pillars.</p>
+        <svg class="logo logo--primary" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#073451" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#073451" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#073451" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#073451" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M55.59,108.67c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M108.69,125.87c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M186.13,76.49c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet__cap">Save the date / social graphic (1:1)</div>
+      <div class="social">
+        <svg class="logo logo--white" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#fff" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#fff" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#fff" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M54.49,107.79c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M107.58,124.99c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M185.03,75.61c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+        <div>
+          <p class="social__date">Tuesday 16 February 2027</p>
+          <h5>Save the date</h5>
+          <p>The 5th annual Data Day. Ohio State University, Columbus.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet__cap">Print rules</div>
+      <div class="pg">
+        <h6 style="margin-top:0">Ink and paper</h6>
+        <p>Dark Blue title, Blue 600 headings, Ink body on white. Teal for the title rule and
+        accent bars only.</p>
+        <h6>Reversed panels</h6>
+        <p>Use the White logo lockup on Dark Blue or Ink. Never place the Primary lockup on a
+        dark panel.</p>
+        <h6>Grayscale fallback</h6>
+        <p>Teal and Green convert to near-identical greys. If a document may be photocopied,
+        separate categories by label or pattern, not color alone.</p>
+        <h6>Minimum sizes</h6>
+        <p>Horizontal lockup no smaller than 1.25 in wide in print, 120 px on screen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 8 ============================ -->
+<section>
+  <p class="sec-num">08 · Data visualization</p>
+  <h2>Charts and series<span class="tick">.</span></h2>
+  <p class="lede">Six categorical colors drawn from the brand scales, ordered so the first
+  three carry the common three-series case at maximum separation.</p>
+
+  <div class="vizgrid">
+<div class="viz"><div class="viz__chip" style="background:#0977BC"></div>
+    <b>1. Blue</b><code>#0977BC</code></div>
+<div class="viz"><div class="viz__chip" style="background:#00A79D"></div>
+    <b>2. Teal</b><code>#00A79D</code></div>
+<div class="viz"><div class="viz__chip" style="background:#7CB46A"></div>
+    <b>3. Green</b><code>#7CB46A</code></div>
+<div class="viz"><div class="viz__chip" style="background:#073451"></div>
+    <b>4. Dark Blue</b><code>#073451</code></div>
+<div class="viz"><div class="viz__chip" style="background:#89BEDF"></div>
+    <b>5. Light Blue</b><code>#89BEDF</code></div>
+<div class="viz"><div class="viz__chip" style="background:#5F6B75"></div>
+    <b>6. Slate</b><code>#5F6B75</code></div>
+  </div>
+
+  <div class="charts" style="margin-top:1.75rem">
+    <div class="chart">
+      <h4>Categorical: attendance by sector</h4>
+      <svg viewBox="0 0 320 170" role="img" aria-label="Bar chart of attendance by sector">
+        <line x1="34" y1="140" x2="310" y2="140" stroke="#DDE2E7" stroke-width="1.5"/>
+        <line x1="34" y1="20" x2="34" y2="140" stroke="#DDE2E7" stroke-width="1.5"/>
+        <g font-family="'JetBrains Mono',monospace" font-size="8" fill="#5F6B75">
+          <text x="28" y="143" text-anchor="end">0</text>
+          <text x="28" y="83" text-anchor="end">40</text>
+          <text x="28" y="26" text-anchor="end">80</text>
+        </g>
+        <rect x="48" y="42" width="38" height="98" fill="#0977BC" rx="2"/>
+        <rect x="100" y="66" width="38" height="74" fill="#00A79D" rx="2"/>
+        <rect x="152" y="88" width="38" height="52" fill="#7CB46A" rx="2"/>
+        <rect x="204" y="104" width="38" height="36" fill="#073451" rx="2"/>
+        <rect x="256" y="118" width="38" height="22" fill="#89BEDF" rx="2"/>
+        <g font-family="'Figtree',sans-serif" font-size="8" fill="#3D474F" text-anchor="middle">
+          <text x="67" y="154">Local gov</text>
+          <text x="119" y="154">Nonprofit</text>
+          <text x="171" y="154">Education</text>
+          <text x="223" y="154">Business</text>
+          <text x="275" y="154">State</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="chart">
+      <h4>Multi-series: pair color with a second channel</h4>
+      <svg viewBox="0 0 320 170" role="img" aria-label="Line chart with three series distinguished by color and dash pattern">
+        <line x1="34" y1="140" x2="310" y2="140" stroke="#DDE2E7" stroke-width="1.5"/>
+        <line x1="34" y1="20" x2="34" y2="140" stroke="#DDE2E7" stroke-width="1.5"/>
+        <polyline points="46,120 110,104 174,76 238,58 300,38" fill="none" stroke="#0977BC" stroke-width="2.5" stroke-linecap="round"/>
+        <polyline points="46,128 110,118 174,112 238,92 300,84" fill="none" stroke="#00A79D" stroke-width="2.5" stroke-dasharray="7 4" stroke-linecap="round"/>
+        <polyline points="46,134 110,130 174,124 238,120 300,110" fill="none" stroke="#7CB46A" stroke-width="2.5" stroke-dasharray="2 4" stroke-linecap="round"/>
+        <g fill="#0977BC"><circle cx="46" cy="120" r="3"/><circle cx="174" cy="76" r="3"/><circle cx="300" cy="38" r="3"/></g>
+        <g font-family="'JetBrains Mono',monospace" font-size="8" fill="#5F6B75">
+          <text x="46" y="154" text-anchor="middle">2023</text>
+          <text x="174" y="154" text-anchor="middle">2025</text>
+          <text x="300" y="154" text-anchor="middle">2027</text>
+        </g>
+      </svg>
+      <div class="legend">
+        <span><i style="background:#0977BC"></i>Attendees</span>
+        <span><i style="background:#00A79D"></i>Organizations</span>
+        <span><i style="background:#7CB46A"></i>Sessions</span>
+      </div>
+    </div>
+
+    <div class="chart">
+      <h4>Sequential: one measure, low to high</h4>
+      <svg viewBox="0 0 320 64" role="img" aria-label="Sequential blue ramp from light to dark">
+        <rect x="0" y="0" width="53" height="40" fill="#E6F1F8"/>
+        <rect x="53" y="0" width="53" height="40" fill="#BFDCEE"/>
+        <rect x="106" y="0" width="53" height="40" fill="#89BEDF"/>
+        <rect x="159" y="0" width="53" height="40" fill="#4B9CCE"/>
+        <rect x="212" y="0" width="53" height="40" fill="#0977BC"/>
+        <rect x="265" y="0" width="55" height="40" fill="#07588B"/>
+        <g font-family="'JetBrains Mono',monospace" font-size="8" fill="#5F6B75">
+          <text x="0" y="56">Low</text><text x="320" y="56" text-anchor="end">High</text>
+        </g>
+      </svg>
+      <p style="font-size:0.82rem;color:#3D474F;margin:0.7rem 0 0">Use the Blue scale for
+      choropleths and heatmaps. For a second measure use the Teal scale. Do not mix two hues
+      into one sequential ramp.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <p><b>Blue and Teal are the closest pair under deuteranopia.</b> For two-series charts
+    use Blue and Green. When series must be told apart at a glance, add a second channel:
+    dash pattern, marker shape, or direct labels.</p>
+  </div>
+</section>
+
+<!-- ============================ 9 ============================ -->
+<section>
+  <p class="sec-num">09 · Logo</p>
+  <h2>Lockups and clear space<span class="tick">.</span></h2>
+  <p class="lede">Four files live in <code>Design/logo/</code>: Primary and White, each in
+  horizontal and vertical. Pick by background, never by recoloring.</p>
+
+  <div class="logos">
+    <div class="logobox">
+      <div class="logobox__demo" style="background:#FFFFFF"><svg class="logo logo--primary" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#073451" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#073451" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#073451" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#073451" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M55.59,108.67c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M108.69,125.87c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M186.13,76.49c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg></div>
+      <div class="logobox__cap"><b>Primary, horizontal</b><span>White and Fog backgrounds. The default for print.</span></div>
+    </div>
+    <div class="logobox">
+      <div class="logobox__demo" style="background:#073451"><svg class="logo logo--white" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#fff" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#fff" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#fff" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M54.49,107.79c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M107.58,124.99c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M185.03,75.61c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg></div>
+      <div class="logobox__cap"><b>White, horizontal</b><span>Dark Blue and Ink backgrounds. The default for web.</span></div>
+    </div>
+    <div class="logobox">
+      <div class="logobox__demo" style="background:#F2F4F6"><svg class="logo logo--vert" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 627.45 416.67">
+  
+  <g>
+    <g>
+      <g>
+        <g>
+          <path fill="#073451" d="M0,310.94c1.45-.19,3.29-.41,5.51-.65,2.22-.24,4.64-.46,7.25-.65,2.61-.19,5.29-.36,8.05-.51,2.76-.14,5.44-.22,8.05-.22,18.28,0,32.15,4.57,41.63,13.71,9.47,9.14,14.21,22.75,14.21,40.83s-4.84,31.84-14.5,40.39c-9.67,8.56-23.98,12.84-42.93,12.84-4.84,0-9.5-.22-14-.65-4.5-.44-8.92-.94-13.27-1.52v-103.56ZM25.67,393.9c.68.1,1.45.15,2.32.15h2.76c3.77,0,7.33-.46,10.66-1.38,3.34-.92,6.21-2.54,8.63-4.86,2.42-2.32,4.33-5.46,5.73-9.43,1.4-3.96,2.1-9.04,2.1-15.23s-.72-11.17-2.17-15.23c-1.45-4.06-3.36-7.28-5.73-9.65-2.37-2.37-5.15-4.06-8.34-5.08-3.19-1.02-6.53-1.52-10.01-1.52-1.94,0-3.34.03-4.21.07-.87.05-1.45.07-1.74.07v62.08Z"/>
+          <path fill="#073451" d="M120.97,310.79c2.51-.29,4.86-.53,7.03-.72,2.18-.19,4.37-.29,6.6-.29,1.84,0,3.84.1,6.02.29,2.18.19,4.66.43,7.47.72l32.05,103.7c-5.51.87-10.35,1.31-14.5,1.31-1.94,0-3.87-.1-5.8-.29-1.94-.19-4.01-.49-6.24-.87l-5.51-20.16c-2.71.78-5.29,1.36-7.76,1.74-2.47.39-4.91.58-7.33.58-2.22,0-4.5-.17-6.82-.51-2.32-.34-4.74-.85-7.25-1.52l-5.37,19.87c-2.22.38-4.26.68-6.09.87-1.84.19-3.62.29-5.37.29s-3.75-.12-6.02-.36c-2.27-.24-4.81-.6-7.62-1.09l32.49-103.56ZM133.88,338.06l-9.72,37.28c1.64.49,3.19.87,4.64,1.16,1.45.29,2.95.43,4.5.43,1.64,0,3.26-.12,4.86-.36,1.59-.24,3.26-.6,5-1.09l-9.28-37.42Z"/>
+          <path fill="#073451" d="M195.52,333.27h-24.22c-.87-4.16-1.3-7.98-1.3-11.46,0-3.19.44-6.91,1.3-11.17h74.12c.38,2.13.67,4.11.87,5.95.19,1.84.29,3.58.29,5.22,0,3.19-.39,7.01-1.16,11.46h-24.22v81.22c-5.13.87-9.38,1.31-12.76,1.31-3.58,0-7.88-.43-12.91-1.31v-81.22Z"/>
+          <path fill="#073451" d="M268.91,310.79c2.51-.29,4.86-.53,7.04-.72,2.17-.19,4.37-.29,6.6-.29,1.84,0,3.84.1,6.02.29,2.17.19,4.66.43,7.47.72l32.05,103.7c-5.51.87-10.35,1.31-14.5,1.31-1.94,0-3.87-.1-5.8-.29-1.94-.19-4.01-.49-6.24-.87l-5.51-20.16c-2.71.78-5.29,1.36-7.76,1.74-2.47.39-4.91.58-7.32.58-2.23,0-4.5-.17-6.82-.51-2.32-.34-4.74-.85-7.25-1.52l-5.37,19.87c-2.23.38-4.26.68-6.09.87-1.84.19-3.63.29-5.37.29s-3.75-.12-6.02-.36c-2.27-.24-4.81-.6-7.61-1.09l32.49-103.56ZM281.82,338.06l-9.72,37.28c1.64.49,3.19.87,4.64,1.16,1.45.29,2.95.43,4.5.43,1.64,0,3.26-.12,4.86-.36,1.6-.24,3.26-.6,5-1.09l-9.28-37.42Z"/>
+          <path fill="#073451" d="M369.42,310.94c1.45-.19,3.29-.41,5.51-.65,2.22-.24,4.64-.46,7.25-.65,2.61-.19,5.29-.36,8.05-.51,2.76-.14,5.44-.22,8.05-.22,18.28,0,32.15,4.57,41.63,13.71,9.47,9.14,14.21,22.75,14.21,40.83s-4.84,31.84-14.5,40.39c-9.67,8.56-23.98,12.84-42.93,12.84-4.84,0-9.5-.22-14-.65-4.5-.44-8.92-.94-13.27-1.52v-103.56ZM395.09,393.9c.68.1,1.45.15,2.32.15h2.76c3.77,0,7.33-.46,10.66-1.38,3.34-.92,6.21-2.54,8.63-4.86,2.42-2.32,4.33-5.46,5.73-9.43,1.4-3.96,2.1-9.04,2.1-15.23s-.72-11.17-2.18-15.23c-1.45-4.06-3.36-7.28-5.73-9.65-2.37-2.37-5.15-4.06-8.34-5.08-3.19-1.02-6.53-1.52-10.01-1.52-1.94,0-3.34.03-4.21.07-.87.05-1.45.07-1.74.07v62.08Z"/>
+          <path fill="#073451" d="M490.38,310.79c2.51-.29,4.86-.53,7.04-.72,2.18-.19,4.37-.29,6.6-.29,1.84,0,3.84.1,6.02.29,2.17.19,4.66.43,7.47.72l32.05,103.7c-5.51.87-10.35,1.31-14.5,1.31-1.94,0-3.87-.1-5.8-.29-1.94-.19-4.01-.49-6.24-.87l-5.51-20.16c-2.71.78-5.29,1.36-7.76,1.74-2.46.39-4.91.58-7.32.58-2.23,0-4.5-.17-6.82-.51-2.32-.34-4.74-.85-7.25-1.52l-5.37,19.87c-2.23.38-4.26.68-6.09.87-1.84.19-3.63.29-5.37.29s-3.75-.12-6.02-.36c-2.27-.24-4.81-.6-7.61-1.09l32.49-103.56ZM503.29,338.06l-9.72,37.28c1.64.49,3.19.87,4.64,1.16s2.95.43,4.5.43c1.64,0,3.26-.12,4.86-.36,1.6-.24,3.26-.6,5-1.09l-9.28-37.42Z"/>
+          <path fill="#073451" d="M569.43,377.51c-2.52-5.22-5.15-10.66-7.91-16.32-2.76-5.66-5.51-11.31-8.27-16.97-2.75-5.66-5.49-11.31-8.19-16.97-2.71-5.66-5.32-11.1-7.83-16.32,1.64-.29,3.87-.56,6.67-.8,2.8-.24,5.46-.36,7.98-.36,2.03,0,4.28.12,6.74.36,2.47.24,4.62.51,6.46.8l17.84,40.32,17.12-40.32c2.22-.39,4.54-.68,6.96-.87,2.42-.19,4.88-.29,7.4-.29,1.64,0,3.77.12,6.38.36,2.61.24,4.83.51,6.67.8l-32.34,66.57v36.99c-5.13.87-9.38,1.31-12.76,1.31-3.58,0-7.88-.43-12.91-1.31v-36.99Z"/>
+        </g>
+        <g>
+          <path fill="#073451" d="M175.91,165.19c-5.75-7.99-9.22-17.71-9.22-28.3,0-26.86,21.78-48.64,48.64-48.64s48.64,21.78,48.64,48.64c0,3.51-.41,6.91-1.11,10.21l21.61,10.82c8.92-10.68,22.17-17.62,37.17-17.62,8.32,0,16.03,2.28,22.88,5.96l27.69-31c-5.18-7.73-8.21-17.02-8.21-27.02,0-26.86,21.78-48.64,48.64-48.64,21.38,0,39.33,13.88,45.86,33.05l17.65-1.31v-27.93c0-7.32-5.62-13.4-12.92-13.98L161.78.04c-8.16-.65-15.13,5.8-15.13,13.98v176.38l-13.68,26.04,7.02-8.17,35.92-43.09Z"/>
+          <path fill="#073451" d="M460.42,96.87c-4.09,22.73-23.86,40.01-47.77,40.01-8.03,0-15.5-2.13-22.17-5.58l-28,31.34c4.9,7.59,7.81,16.58,7.81,26.29,0,26.86-21.78,48.64-48.64,48.64s-48.64-21.78-48.64-48.64c0-3.13.36-6.16.92-9.13l-22.1-11.07c-8.92,10.2-21.87,16.78-36.49,16.78-7.45,0-14.43-1.81-20.74-4.8l-47.95,57.51v13c0,8.18,6.98,14.63,15.13,13.98l301.46-29.37c7.29-.58,12.92-6.66,12.92-13.98v-119.31l9.63-7.56-25.36,1.89Z"/>
+          <path fill="#7cb46a" d="M215.33,162.94c14.39,0,26.06-11.67,26.06-26.06s-11.67-26.06-26.06-26.06-26.06,11.67-26.06,26.06,11.67,26.06,26.06,26.06Z"/>
+          <path fill="#00a79d" d="M295.59,188.93c0,14.39,11.67,26.06,26.06,26.06s26.06-11.67,26.06-26.06-11.67-26.06-26.06-26.06-26.06,11.67-26.06,26.06Z"/>
+          <path fill="#0977bc" d="M412.65,114.3c14.39,0,26.06-11.67,26.06-26.06s-11.67-26.06-26.06-26.06-26.06,11.67-26.06,26.06,11.67,26.06,26.06,26.06Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg></div>
+      <div class="logobox__cap"><b>Primary, vertical</b><span>Square and narrow spaces: social avatars, signage, badges.</span></div>
+    </div>
+    <div class="logobox">
+      <div class="logobox__demo clearspace" style="background:#FFFFFF">
+        <span class="box"><svg class="logo logo--primary" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#073451" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#073451" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#073451" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#073451" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#073451" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#073451" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M55.59,108.67c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M108.69,125.87c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M186.13,76.49c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg></span>
+      </div>
+      <div class="logobox__cap"><b>Clear space</b><span>Keep clear space on all sides equal to the height of the mark. Nothing enters the dashed zone.</span></div>
+    </div>
+  </div>
+
+  <h3>Logo don'ts</h3>
+  <ul class="plain">
+    <li>Do not recolor the mark. The four colors in the artwork are the brand.</li>
+    <li>Do not place the Primary lockup on Dark Blue, Ink, or any photograph. Use the White lockup.</li>
+    <li>Do not stretch, rotate, add effects, or rebuild the lockup from parts.</li>
+    <li>Do not set the horizontal lockup below 1.25 in wide in print, or 120 px on screen.</li>
+    <li>Co-brand with MORPC by placing the MORPC logo at the opposite edge with equal optical weight, never inside the Data Day clear space.</li>
+  </ul>
+</section>
+
+<!-- ============================ 10 ============================ -->
+<section>
+  <p class="sec-num">10 · Reference</p>
+  <h2>Copy and paste<span class="tick">.</span></h2>
+  <p class="lede">Full token set, including all 100 to 700 scales and semantic aliases, lives
+  in <code>Design/palette.css</code>. Documentation and the full contrast tables are in
+  <code>Design/palette.md</code>. These are the values you need most often.</p>
+
+<pre><span class="c">/* Core */</span>
+--dd-navy-500:  <span class="v">#073451</span>;  <span class="c">/* Dark Blue: headlines, nav, bands */</span>
+--dd-blue-500:  <span class="v">#0977BC</span>;  <span class="c">/* Blue: buttons, fills */</span>
+--dd-teal-500:  <span class="v">#00A79D</span>;  <span class="c">/* Teal: primary CTA fill */</span>
+--dd-green-500: <span class="v">#7CB46A</span>;  <span class="c">/* Green: secondary accent */</span>
+--dd-ink:       <span class="v">#171C21</span>;  <span class="c">/* body text, dark surfaces */</span>
+--dd-fog:       <span class="v">#F2F4F6</span>;  <span class="c">/* page background */</span>
+
+<span class="c">/* Text-safe steps: use these, not the 500s */</span>
+--dd-blue-600:  <span class="v">#07588B</span>;  <span class="c">/* links on light  (7.56:1 on white) */</span>
+--dd-teal-600:  <span class="v">#007C74</span>;  <span class="c">/* teal text on light */</span>
+--dd-green-700: <span class="v">#425F38</span>;  <span class="c">/* green text on light */</span>
+--dd-blue-300:  <span class="v">#89BEDF</span>;  <span class="c">/* links on dark   (8.57:1 on Ink) */</span>
+--dd-teal-300:  <span class="v">#85D5D0</span>;  <span class="c">/* accents on the navy band */</span>
+
+<span class="c">/* Supporting neutrals */</span>
+--dd-slate:     <span class="v">#5F6B75</span>;  <span class="c">/* captions, metadata */</span>
+--dd-mist:      <span class="v">#DDE2E7</span>;  <span class="c">/* hairlines, table borders */</span>
+--dd-ink-soft:  <span class="v">#2A3238</span>;  <span class="c">/* elevated dark surface */</span></pre>
+
+  <h3>The short version</h3>
+  <ul class="plain">
+    <li>Dark Blue for structure, Blue for anything clickable, Teal for the one action that matters.</li>
+    <li>Body text is Ink on light, Fog on dark. Captions are Slate on light, Dark Blue 300 on dark.</li>
+    <li>Accents at 500 are fills. When an accent must be text, step to 600 or 700 on light, 300 on dark.</li>
+    <li>White logo on dark, Primary logo on light. Never recolor either.</li>
+  </ul>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <svg class="logo logo--white" role="img" aria-label="Data Day" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.52 175.48">
+  
+  <g>
+    <g>
+      <g>
+        <path fill="#fff" d="M277.43,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM294.41,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M357.45,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM365.99,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M406.77,66.67h-16.02c-.58-2.75-.86-5.28-.86-7.58,0-2.11.29-4.57.86-7.39h49.03c.25,1.41.45,2.72.58,3.93.13,1.22.19,2.37.19,3.45,0,2.11-.26,4.64-.77,7.58h-16.02v53.73c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-53.73Z"/>
+        <path fill="#fff" d="M455.32,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM463.86,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M521.82,51.89c.96-.13,2.17-.27,3.65-.43,1.47-.16,3.07-.3,4.8-.43,1.73-.13,3.5-.24,5.33-.34s3.6-.14,5.33-.14c12.09,0,21.27,3.02,27.54,9.07,6.27,6.04,9.4,15.05,9.4,27.01s-3.2,21.06-9.59,26.72c-6.4,5.66-15.87,8.49-28.4,8.49-3.2,0-6.28-.14-9.26-.43s-5.9-.62-8.78-1.01V51.89ZM538.8,106.78c.45.06.96.1,1.54.1h1.82c2.5,0,4.85-.3,7.05-.91,2.21-.61,4.11-1.68,5.71-3.21,1.6-1.54,2.86-3.61,3.79-6.24.93-2.62,1.39-5.98,1.39-10.08s-.48-7.39-1.44-10.08c-.96-2.69-2.22-4.81-3.79-6.38-1.57-1.57-3.41-2.69-5.52-3.36-2.11-.67-4.32-1.01-6.62-1.01-1.28,0-2.21.02-2.78.05-.58.03-.96.05-1.15.05v41.07Z"/>
+        <path fill="#fff" d="M601.84,51.8c1.66-.19,3.21-.35,4.65-.48,1.44-.13,2.89-.19,4.37-.19,1.21,0,2.54.06,3.98.19,1.44.13,3.09.29,4.94.48l21.21,68.61c-3.65.58-6.85.86-9.6.86-1.28,0-2.56-.06-3.84-.19-1.28-.13-2.66-.32-4.13-.58l-3.65-13.34c-1.79.51-3.5.9-5.13,1.15-1.63.26-3.25.38-4.84.38-1.47,0-2.97-.11-4.51-.34-1.54-.22-3.14-.56-4.8-1.01l-3.55,13.14c-1.47.25-2.82.45-4.03.58-1.22.13-2.4.19-3.55.19s-2.48-.08-3.98-.24c-1.5-.16-3.18-.4-5.04-.72l21.49-68.51ZM610.38,69.84l-6.43,24.66c1.09.32,2.11.58,3.07.77.96.19,1.95.29,2.97.29,1.09,0,2.16-.08,3.21-.24,1.05-.16,2.16-.4,3.31-.72l-6.14-24.76Z"/>
+        <path fill="#fff" d="M654.14,95.94c-1.66-3.45-3.41-7.05-5.23-10.79-1.82-3.74-3.65-7.48-5.47-11.23s-3.63-7.48-5.42-11.23c-1.79-3.74-3.52-7.34-5.18-10.79,1.09-.19,2.56-.37,4.41-.53,1.85-.16,3.61-.24,5.28-.24,1.34,0,2.83.08,4.46.24,1.63.16,3.05.34,4.27.53l11.8,26.67,11.32-26.67c1.47-.25,3.01-.45,4.61-.58,1.6-.13,3.23-.19,4.89-.19,1.09,0,2.49.08,4.22.24,1.73.16,3.2.34,4.41.53l-21.4,44.04v24.47c-3.39.58-6.21.86-8.44.86-2.37,0-5.21-.29-8.54-.86v-24.47Z"/>
+      </g>
+      <g>
+        <path fill="#fff" d="M28.41,109.28c-3.8-5.28-6.1-11.72-6.1-18.72,0-17.77,14.41-32.18,32.18-32.18s32.18,14.41,32.18,32.18c0,2.32-.27,4.57-.74,6.75l14.29,7.16c5.9-7.06,14.67-11.65,24.59-11.65,5.5,0,10.61,1.51,15.14,3.95l18.32-20.51c-3.42-5.11-5.43-11.26-5.43-17.87,0-17.77,14.41-32.18,32.18-32.18,14.14,0,26.02,9.18,30.34,21.86l11.68-.87v-18.48c0-4.84-3.72-8.87-8.55-9.25L19.06.03c-5.4-.43-10.01,3.84-10.01,9.25v116.68L0,143.19l4.64-5.4,23.77-28.5Z"/>
+        <path fill="#fff" d="M216.63,64.09c-2.7,15.04-15.79,26.47-31.6,26.47-5.31,0-10.25-1.41-14.67-3.69l-18.53,20.74c3.24,5.02,5.17,10.97,5.17,17.39,0,17.77-14.41,32.18-32.18,32.18s-32.18-14.41-32.18-32.18c0-2.07.24-4.08.61-6.04l-14.62-7.32c-5.9,6.75-14.47,11.1-24.14,11.1-4.93,0-9.54-1.2-13.72-3.18l-31.72,38.04v8.6c0,5.41,4.61,9.68,10.01,9.25l199.43-19.43c4.83-.38,8.55-4.41,8.55-9.25v-78.93l6.37-5-16.78,1.25Z"/>
+        <path fill="#7cb46a" d="M54.49,107.79c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+        <path fill="#00a79d" d="M107.58,124.99c0,9.52,7.72,17.24,17.24,17.24s17.24-7.72,17.24-17.24-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24Z"/>
+        <path fill="#0977bc" d="M185.03,75.61c9.52,0,17.24-7.72,17.24-17.24s-7.72-17.24-17.24-17.24-17.24,7.72-17.24,17.24,7.72,17.24,17.24,17.24Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
+    <p>Data Day 2027 is convened by <a href="https://www.morpc.org">MORPC</a> and the Regional
+    Data Roundtable.<br>Palette source of truth: <code>Design/palette.css</code> and
+    <code>Design/palette.md</code>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
