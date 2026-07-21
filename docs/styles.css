@@ -96,9 +96,58 @@ img, svg { max-width: 100%; }
 .topbar .wrap { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.35rem 1.25rem; padding-block: 0.85rem; }
 .topbar__brand { display: flex; align-items: center; gap: 0.6rem; color: var(--fg); text-decoration: none; font-weight: 700; white-space: nowrap; }
 .topbar__brand b { color: var(--dd-gold-500); }
-.topbar__nav { display: flex; gap: clamp(1rem, 3vw, 1.75rem); }
-.topbar__nav a { color: var(--fg); text-decoration: none; font-weight: 600; }
-.topbar__nav a:hover, .topbar__nav a[aria-current="page"] { color: var(--dd-magenta-300); }
+.topbar__nav { display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem clamp(1rem, 3vw, 1.75rem); }
+
+/* Top-level items: plain links and dropdown trigger buttons share one look */
+.navitem--menu { position: relative; display: inline-flex; }
+.navitem__link,
+.navitem__btn {
+  color: var(--fg); text-decoration: none; font-weight: 600;
+  font-family: inherit; font-size: inherit; line-height: 1.6;
+}
+.navitem__btn {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  background: none; border: 0; padding: 0; cursor: pointer;
+}
+.navitem__btn::after {
+  content: ""; width: 0.45em; height: 0.45em; margin-top: -0.2em;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(45deg); transition: transform .12s ease;
+}
+.navitem__btn[aria-expanded="true"]::after { transform: rotate(-135deg); margin-top: 0.1em; }
+.navitem__link:hover,
+.navitem__btn:hover,
+.navitem__btn.is-active,
+.navitem__link[aria-current="page"] { color: var(--dd-magenta-300); }
+
+/* Dropdown panel */
+.navmenu {
+  position: absolute; top: calc(100% + 0.55rem); left: 0; z-index: 30;
+  display: none; flex-direction: column; min-width: 12rem;
+  background: var(--dd-card); border: 1px solid var(--dd-border);
+  border-radius: 10px; padding: 0.4rem;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
+}
+.navmenu[data-open="true"] { display: flex; }
+.navmenu__item {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 0.9rem;
+  color: var(--fg); text-decoration: none; font-weight: 600; font-size: 0.98rem;
+  padding: 0.5rem 0.7rem; border-radius: 7px; white-space: nowrap;
+}
+a.navmenu__item:hover,
+a.navmenu__item:focus-visible { background: var(--dd-surface); color: var(--fg); }
+.navmenu__item[aria-current="page"] { color: var(--dd-magenta-300); }
+.navmenu__item--disabled { color: var(--dd-mist); cursor: default; }
+.navmenu__item em {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-style: normal; font-size: 0.66rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--dd-mist);
+}
+
+/* When the top bar wraps on narrow screens, keep the right-most menu on-screen */
+@media (max-width: 34rem) {
+  .navitem--menu:last-of-type .navmenu { left: auto; right: 0; }
+}
 
 /* ---- Hero ---- */
 .hero {
