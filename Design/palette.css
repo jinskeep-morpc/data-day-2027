@@ -1,63 +1,85 @@
 /* ==========================================================================
-   Data Day 2027 — Color Tokens
-   Palette: "Magenta Signal (Dark)" — dark-first.
+   Data Day 2027 Color Tokens
+   Palette: "Data Day Classic", the established Data Day / MORPC palette,
+   retained for 2027. Core hexes match the logo SVGs in Design/logo/.
    Documentation + rationale: palette.md
-   Source: Claude Design project 19813721-b03a-45cc-9964-61ad5e02f050
    ========================================================================== */
 
 :root {
-  /* --- Signal Magenta (hero) --- */
-  --dd-magenta-100: #F6E6F3;
-  --dd-magenta-200: #E9BEE0;
-  --dd-magenta-300: #E48CDA;
-  --dd-magenta-400: #C36BB6;
-  --dd-magenta-500: #CB4FC0;
-  --dd-magenta-600: #7A2F71;
-  --dd-magenta-700: #552050;
+  /* --- Dark Blue (primary) --- */
+  --dd-navy-100: #E6EBEE;
+  --dd-navy-200: #BFCAD2;
+  --dd-navy-300: #889EAB;
+  --dd-navy-400: #4A6B80;
+  --dd-navy-500: #073451;
+  --dd-navy-600: #05263C;
+  --dd-navy-700: #041C2B;
 
-  /* --- Route Indigo (secondary) --- */
-  --dd-indigo-100: #EAE8F9;
-  --dd-indigo-200: #CBC5F0;
-  --dd-indigo-300: #9C8FE0;
-  --dd-indigo-400: #7A6BCF;
-  --dd-indigo-500: #6153C4;
-  --dd-indigo-600: #443A8C;
-  --dd-indigo-700: #302963;
+  /* --- Blue (secondary) --- */
+  --dd-blue-100: #E6F1F8;
+  --dd-blue-200: #BFDCEE;
+  --dd-blue-300: #89BEDF;
+  --dd-blue-400: #4B9CCE;
+  --dd-blue-500: #0977BC;
+  --dd-blue-600: #07588B;
+  --dd-blue-700: #053F64;
 
-  /* --- Plot Gold (accent / forward motion) --- */
-  --dd-gold-100: #FDF1D9;
-  --dd-gold-200: #FBDE9F;
-  --dd-gold-300: #F9CA6A;
-  --dd-gold-400: #F7C24F;
-  --dd-gold-500: #F6B93B;
-  --dd-gold-600: #B8790F;
-  --dd-gold-700: #8A5B0B;
+  /* --- Teal (accent) --- */
+  --dd-teal-100: #E6F6F5;
+  --dd-teal-200: #BDE8E6;
+  --dd-teal-300: #85D5D0;
+  --dd-teal-400: #45BFB7;
+  --dd-teal-500: #00A79D;
+  --dd-teal-600: #007C74;
+  --dd-teal-700: #005953;
 
-  /* --- Neutrals / surfaces --- */
-  --dd-cloud:       #F5F0F7; /* primary light foreground on dark */
-  --dd-mist:        #948DA0; /* muted foreground, borders, disabled */
-  --dd-surface:     #4A3F5C; /* elevated dark surface: cards, panels */
-  --dd-ink-void:    #221C2B; /* primary dark background */
-  --dd-page:        #0F0C13; /* deepest page base (mockup) */
-  --dd-card:        #1B1622; /* card fill on page base (mockup) */
-  --dd-border:      #2B2434; /* hairline border on dark */
+  /* --- Green (accent) --- */
+  --dd-green-100: #F2F8F0;
+  --dd-green-200: #DDECD8;
+  --dd-green-300: #C0DBB7;
+  --dd-green-400: #9FC892;
+  --dd-green-500: #7CB46A;
+  --dd-green-600: #5C854E;
+  --dd-green-700: #425F38;
+
+  /* --- Neutrals --- */
+  --dd-ink:        #171C21; /* dark muted black: text on light, dark surfaces */
+  --dd-ink-soft:   #2A3238; /* elevated dark surface, hairline on ink */
+  --dd-slate:      #5F6B75; /* muted foreground: captions, borders, disabled */
+  --dd-mist:       #DDE2E7; /* hairline borders, dividers on light */
+  --dd-fog:        #F2F4F6; /* very light grey: page background, card fill */
+  --dd-white:      #FFFFFF;
 
   /* --- Data-visualization categorical palette --- */
-  --dd-viz-1: #CB4FC0; /* Magenta */
-  --dd-viz-2: #9C8FE0; /* Indigo   */
-  --dd-viz-3: #F6B93B; /* Gold     */
-  --dd-viz-4: #F2607B; /* Rose     */
-  --dd-viz-5: #C96A3E; /* Rust     */
-  --dd-viz-6: #948DA0; /* Mist Gray */
+  --dd-viz-1: #0977BC; /* Blue        */
+  --dd-viz-2: #00A79D; /* Teal        */
+  --dd-viz-3: #7CB46A; /* Green       */
+  --dd-viz-4: #073451; /* Dark Blue   */
+  --dd-viz-5: #89BEDF; /* Blue 300    */
+  --dd-viz-6: #5F6B75; /* Slate       */
 
   /* --- Semantic aliases (map roles → tokens) --- */
-  --dd-hero:       var(--dd-magenta-500);
-  --dd-secondary:  var(--dd-indigo-500);
-  --dd-accent:     var(--dd-gold-500);
-  --dd-bg:         var(--dd-ink-void);
-  --dd-fg:         var(--dd-cloud);
-  --dd-fg-muted:   var(--dd-mist);
-  --dd-link:       var(--dd-magenta-300); /* text emphasis on dark; 500 is fill-only */
-  --dd-link-alt:   var(--dd-indigo-300);
-  --dd-on-accent:  var(--dd-ink-void);    /* dark text on gold buttons */
+  --dd-primary:     var(--dd-navy-500);
+  --dd-secondary:   var(--dd-blue-500);
+  --dd-accent:      var(--dd-teal-500);
+  --dd-accent-alt:  var(--dd-green-500);
+  --dd-bg:          var(--dd-fog);
+  --dd-surface:     var(--dd-white);
+  --dd-fg:          var(--dd-ink);
+  --dd-fg-muted:    var(--dd-slate);
+  --dd-border:      var(--dd-mist);
+  --dd-link:        var(--dd-blue-600); /* 7.6:1 on white; 500 is fill-only */
+  --dd-on-primary:  var(--dd-white);
+  --dd-on-accent:   var(--dd-navy-500); /* dark text on teal / green fills */
+}
+
+/* --- Dark surfaces (hero bands, footers, reversed logo lockups) --- */
+.dd-dark {
+  --dd-bg:        var(--dd-ink);
+  --dd-surface:   var(--dd-ink-soft);
+  --dd-fg:        var(--dd-fog);
+  --dd-fg-muted:  var(--dd-navy-300);
+  --dd-border:    #33403C;
+  --dd-link:      var(--dd-blue-300); /* 8.6:1 on ink; 500 fails on dark */
+  --dd-accent:    var(--dd-teal-300);
 }

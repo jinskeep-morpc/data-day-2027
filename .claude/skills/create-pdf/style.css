@@ -1,18 +1,18 @@
 /* Data Day 2027 house style for generated PDFs.
-   Themed to "Plotting What's Next" — the Magenta Signal palette on white
-   paper: magenta document title with a gold rule, indigo section headings,
-   Ink Void body. Co-branded header (Data Day mark + MORPC logo).
+   The "Data Day Classic" palette on white paper: Dark Blue document title
+   with a teal rule, Blue section headings, Ink body. Co-branded header
+   (Data Day mark + MORPC logo).
    Rendered via headless Chromium. Palette source: Design/palette.md. */
 
 :root {
-  --magenta: #CB4FC0;      /* hero — document title, brand wordmark */
-  --magenta-deep: #7A2F71; /* strong lead-ins / labels (higher contrast) */
-  --indigo: #6153C4;       /* section headings, links */
-  --gold: #F6B93B;         /* accent — title rule, list markers */
-  --gold-deep: #B8790F;    /* the "2027", list markers on white */
-  --ink: #221C2B;          /* body text (Ink Void) */
-  --rule: #E4DAE9;         /* light lavender rule under section headings */
-  --callout-bg: #FAF2F8;   /* soft magenta-tinted callout */
+  --navy: #073451;         /* primary: document title, brand wordmark */
+  --navy-deep: #05263C;    /* strong lead-ins / labels */
+  --blue: #07588B;         /* section headings, links, table header (7.6:1 on white) */
+  --teal: #00A79D;         /* accent: title rule, callout bar */
+  --teal-deep: #007C74;    /* teal as text on white (5.1:1); list markers */
+  --ink: #171C21;          /* body text */
+  --rule: #DDE2E7;         /* Mist: rule under section headings, table borders */
+  --callout-bg: #E6F1F8;   /* Blue 100 callout wash */
 }
 
 @page {
@@ -49,7 +49,7 @@ h1 {
   line-height: 1.15;
   margin: 0.5rem 0 0.4rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--gold);
+  border-bottom: 3px solid var(--teal);
 }
 
 h2 {
@@ -84,9 +84,9 @@ blockquote {
   margin: 0 0 0.9rem;
   padding: 0.6rem 0.9rem;
   background: var(--callout-bg);
-  border-left: 4px solid var(--magenta);
+  border-left: 4px solid var(--teal);
   font-size: 10pt;
-  color: #4a3a48;
+  color: #3D474F;
 }
 blockquote p:last-child { margin-bottom: 0; }
 
@@ -104,11 +104,11 @@ th, td {
   vertical-align: top;
 }
 th {
-  background: var(--indigo);
+  background: var(--blue);
   color: #fff;
   font-weight: 700;
 }
-tr:nth-child(even) td { background: #faf6fb; }
+tr:nth-child(even) td { background: #F2F4F6; }
 
 hr {
   border: none;

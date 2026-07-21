@@ -1,13 +1,13 @@
-# Data Day 2027 — Color Palette
+# Data Day 2027 Color Palette
 
-**Chosen palette: "Magenta Signal (Dark)"** (Option 1b) — imported from the Claude Design
-project and locked as the source of truth for Data Day 2027 marketing and the static site.
+**Chosen palette: "Data Day Classic."** Following design review, Data Day 2027 keeps the
+established Data Day / MORPC palette and the existing logo. The four core hexes below match
+the logo SVGs in [`logo/`](logo/) exactly, so brand marks drop into any layout without a
+color correction step.
 
-Built **dark-first**: a near-black violet surface is the default stage, with Signal Magenta
-as the hero, Route Indigo as its cooler structural counterpart, and Plot Gold as the single
-"forward motion" accent for CTAs and the plotted trend line. Deliberately distinct from
-MORPC's blue / green / light-blue trio, but tuned to sit alongside the MORPC logo without
-clashing.
+Built **light-first**: a very light grey page with white cards is the default stage. Dark
+Blue carries structure and headlines, Blue is the working/interactive color, and Teal and
+Green are the accents. A dark muted black anchors text and reversed hero bands.
 
 > Machine-readable tokens (full scales + semantic aliases) live in
 > [`palette.css`](palette.css). Keep the two files in sync when values change.
@@ -18,107 +18,159 @@ clashing.
 
 | Name | HEX | Role / usage |
 |------|-----|--------------|
-| **Signal Magenta** | `#CB4FC0` | Hero color — headers, primary buttons, nav. |
-| **Route Indigo** | `#6153C4` | Secondary — section accents, icons, tags. |
-| **Plot Gold** | `#F6B93B` | Energetic accent — CTAs, the plotted route, the "5". |
-| **Ink Void** | `#221C2B` | Primary dark background. |
-| **Surface** | `#4A3F5C` | Elevated dark surface — cards, panels. |
-| **Cloud White** | `#F5F0F7` | Light foreground — headlines, primary text on dark. |
-| **Mist Gray** | `#948DA0` | Muted foreground — captions, borders, disabled states. |
+| **Dark Blue** | `#073451` | Primary: headlines, nav, footers, dark bands. |
+| **Blue** | `#0977BC` | Secondary: links, buttons, section accents. |
+| **Teal** | `#00A79D` | Accent: highlights, icons, chart series. |
+| **Green** | `#7CB46A` | Accent: highlights, tags, chart series. |
+| **Ink** | `#171C21` | Dark muted black: body text, reversed surfaces. |
+| **Fog** | `#F2F4F6` | Very light grey: page background, card fill. |
 
-*Deeper page tones used in the mockup (optional, for layered dark UI):* page base `#0F0C13`,
-card fill `#1B1622`, hairline border `#2B2434`.
+*Supporting neutrals:* elevated dark surface `#2A3238`, muted foreground `#5F6B75`,
+hairline border on light `#DDE2E7`, white `#FFFFFF`.
 
 ---
 
 ## 2 · Extended scales
 
-`100` (lightest tint) → `700` (darkest shade). On dark UI, `200`–`400` typically serve as
-text/icon color on the background, `500` as fills, `600`–`700` as pressed/deep states.
+`100` (lightest tint) → `700` (darkest shade), with `500` = the core brand hex. On light UI,
+`100`–`200` serve as fills and washes, `500` as solid fills and UI, `600`–`700` as text,
+links, and pressed states.
 
-### Signal Magenta
+### Dark Blue
 | 100 | 200 | 300 | 400 | 500 | 600 | 700 |
 |-----|-----|-----|-----|-----|-----|-----|
-| `#F6E6F3` | `#E9BEE0` | `#E48CDA` | `#C36BB6` | `#CB4FC0` | `#7A2F71` | `#552050` |
+| `#E6EBEE` | `#BFCAD2` | `#889EAB` | `#4A6B80` | `#073451` | `#05263C` | `#041C2B` |
 
-### Route Indigo
+### Blue
 | 100 | 200 | 300 | 400 | 500 | 600 | 700 |
 |-----|-----|-----|-----|-----|-----|-----|
-| `#EAE8F9` | `#CBC5F0` | `#9C8FE0` | `#7A6BCF` | `#6153C4` | `#443A8C` | `#302963` |
+| `#E6F1F8` | `#BFDCEE` | `#89BEDF` | `#4B9CCE` | `#0977BC` | `#07588B` | `#053F64` |
 
-### Plot Gold
+### Teal
 | 100 | 200 | 300 | 400 | 500 | 600 | 700 |
 |-----|-----|-----|-----|-----|-----|-----|
-| `#FDF1D9` | `#FBDE9F` | `#F9CA6A` | `#F7C24F` | `#F6B93B` | `#B8790F` | `#8A5B0B` |
+| `#E6F6F5` | `#BDE8E6` | `#85D5D0` | `#45BFB7` | `#00A79D` | `#007C74` | `#005953` |
+
+### Green
+| 100 | 200 | 300 | 400 | 500 | 600 | 700 |
+|-----|-----|-----|-----|-----|-----|-----|
+| `#F2F8F0` | `#DDECD8` | `#C0DBB7` | `#9FC892` | `#7CB46A` | `#5C854E` | `#425F38` |
+
+### Neutrals
+| Fog | Mist | Slate | Ink Soft | Ink |
+|-----|------|-------|----------|-----|
+| `#F2F4F6` | `#DDE2E7` | `#5F6B75` | `#2A3238` | `#171C21` |
 
 ---
 
 ## 3 · Data-visualization palette
 
-Six categorical colors, tuned to stay legible on dark backgrounds and distinguishable for
-deuteranopia / protanopia. No blue or green, so multi-series charts stay on-brand.
+Six categorical colors drawn from the brand scales, ordered so the first three carry the
+most common 3-series case at maximum separation.
 
 | Name | HEX |
 |------|-----|
-| Magenta | `#CB4FC0` |
-| Indigo | `#9C8FE0` |
-| Gold | `#F6B93B` |
-| Rose | `#F2607B` |
-| Rust | `#C96A3E` |
-| Mist Gray | `#948DA0` |
+| Blue | `#0977BC` |
+| Teal | `#00A79D` |
+| Green | `#7CB46A` |
+| Dark Blue | `#073451` |
+| Light Blue | `#89BEDF` |
+| Slate | `#5F6B75` |
+
+**Caution:** Blue and Teal are the closest pair under deuteranopia. For two-series charts
+use Blue + Green; for series that must be told apart at a glance (thin lines, small dots),
+pair color with a second channel: dash pattern, marker shape, or direct labels.
 
 ---
 
-## 4 · Accessibility — WCAG contrast (on dark)
+## 4 · Accessibility (WCAG contrast)
 
-All pairings checked against the primary dark background `#221C2B` (Ink Void).
-AA ≥ 4.5:1 normal text, ≥ 3:1 large text / UI; AAA ≥ 7:1.
+AA ≥ 4.5:1 normal text, ≥ 3:1 large text / UI; AAA ≥ 7:1. Ratios computed, not estimated.
 
-| Pairing | Ratio | Normal text | Large text / UI |
-|---------|-------|-------------|-----------------|
-| Cloud White on Ink Void (body text) | 16.4:1 | ✅ Pass (AAA) | ✅ Pass |
-| Cloud White on Surface | 15.0:1 | ✅ Pass (AAA) | ✅ Pass |
-| Mist Gray on Ink Void (captions) | 5.77:1 | ✅ Pass | ✅ Pass |
-| Magenta 300 on Ink Void (links) | 7.1:1 | ✅ Pass (AAA) | ✅ Pass |
-| Magenta 500 on Ink Void (fills / UI only) | 4.3:1 | ❌ Fail | ✅ Pass |
-| Indigo 300 on Ink Void (links) | 6.5:1 | ✅ Pass | ✅ Pass |
-| Indigo 500 on Ink Void (fills / UI only) | 3.1:1 | ❌ Fail | ✅ Pass |
-| Plot Gold 500 on Ink Void | 10.5:1 | ✅ Pass (AAA) | ✅ Pass |
-| Rose on Ink Void | 5.9:1 | ✅ Pass | ✅ Pass |
-| Rust on Ink Void | 4.9:1 | ✅ Pass | ✅ Pass |
-| Ink Void on Plot Gold (dark text on gold button) | 10.5:1 | ✅ Pass (AAA) | ✅ Pass |
+### On light (`#FFFFFF` white / `#F2F4F6` Fog)
 
-**Rules of thumb:** use Magenta 500 and Indigo 500 as **fills only** — never as text on the
-dark background; for links / text emphasis use the `300` steps. Gold buttons take dark
-(Ink Void) text.
+| Pairing | on White | on Fog | Normal text | Large / UI |
+|---------|----------|--------|-------------|------------|
+| Ink (body text) | 17.15:1 | 15.55:1 | ✅ AAA | ✅ Pass |
+| Dark Blue 500 (headlines) | 12.97:1 | 11.76:1 | ✅ AAA | ✅ Pass |
+| Blue 600 (links) | 7.56:1 | 6.86:1 | ✅ AAA / AA | ✅ Pass |
+| Blue 500 | 4.80:1 | 4.35:1 | ✅ / ❌ on Fog | ✅ Pass |
+| Slate (captions) | 5.46:1 | 4.95:1 | ✅ Pass | ✅ Pass |
+| Teal 600 | 5.08:1 | 4.61:1 | ✅ Pass | ✅ Pass |
+| Teal 500 | 2.99:1 | 2.72:1 | ❌ Fail | ❌ Fail |
+| Green 700 | 7.18:1 | 6.51:1 | ✅ AAA / AA | ✅ Pass |
+| Green 600 | 4.27:1 | 3.87:1 | ❌ Fail | ✅ Pass |
+| Green 500 | 2.44:1 | 2.22:1 | ❌ Fail | ❌ Fail |
+
+### Reversed (on `#171C21` Ink)
+
+| Pairing | Ratio | Normal text | Large / UI |
+|---------|-------|-------------|------------|
+| Fog (body text on dark) | 15.55:1 | ✅ AAA | ✅ Pass |
+| Dark Blue 300 (muted on dark) | 6.15:1 | ✅ Pass | ✅ Pass |
+| Blue 300 (links on dark) | 8.57:1 | ✅ AAA | ✅ Pass |
+| Blue 500 on Ink | 3.57:1 | ❌ Fail | ✅ Pass |
+| Teal 300 | 10.15:1 | ✅ AAA | ✅ Pass |
+| Teal 500 | 5.73:1 | ✅ Pass | ✅ Pass |
+| Green 300 | 11.48:1 | ✅ AAA | ✅ Pass |
+| Green 500 | 7.02:1 | ✅ AAA | ✅ Pass |
+
+### Text on brand fills
+
+| Pairing | Ratio | Verdict |
+|---------|-------|---------|
+| White on Dark Blue 500 | 12.97:1 | ✅ AAA |
+| White on Blue 500 | 4.80:1 | ✅ AA |
+| White on Teal 600 | 5.08:1 | ✅ AA |
+| Dark Blue 500 on Teal 500 | 4.33:1 | ✅ Large / UI only |
+| Ink on Teal 500 | 5.73:1 | ✅ AA |
+| Ink on Green 500 | 7.02:1 | ✅ AAA |
+
+**Rules of thumb**
+
+- **Teal 500 and Green 500 are fills only on light backgrounds**, never as text on white or
+  Fog. For teal text use Teal 600; for green text use Green 700.
+- **Links on light use Blue 600**, not Blue 500. Blue 500 on Fog lands at 4.35:1 and misses AA.
+- **Buttons:** white text on Dark Blue 500 or Blue 500; Ink text on Teal 500 or Green 500.
+- **On dark, drop to the `300` steps** for text and links. Blue 500 fails on Ink.
 
 ---
 
 ## 5 · Suggested pairings
 
-- **Header — Ink Void + Cloud White.** Cloud White text on the dark base; hero sections,
-  nav, footers — the default stage.
-- **Callout — Plot Gold + Ink Void.** Dark text on Gold 500 — CTAs, the plotted route, the
-  "5" mark. AAA contrast either direction.
-- **Card — Surface + Magenta 300.** Magenta 300 or Indigo 300 for links / emphasis on the
-  elevated Surface tone.
+- **Header: Dark Blue 500 + White.** White type on the deep navy; nav, hero bands, footers.
+  The primary logo reverses cleanly here (use the White lockups from [`logo/`](logo/)).
+- **Page: Fog + White cards + Ink text.** The default stage. Mist (`#DDE2E7`) hairlines,
+  Slate for captions and metadata.
+- **CTA: Teal 500 + Ink.** The single "act on this" fill: register, submit a proposal,
+  sponsor. Green 500 + Ink is the quieter second CTA.
+- **Callout / tag: Blue 100 or Teal 100 wash + Dark Blue 600 text.** Low-weight emphasis
+  inside body copy without a heavy fill.
 
 ---
 
 ## 6 · Rationale
 
-Built dark-first: the near-black violet surface (`#221C2B`) is the default stage, not an
-afterthought — so hero, secondary, and accent are all tuned to glow against it rather than
-get muddy.
+Design review landed on continuity: Data Day is entering its 5th year, and the audience of
+public-sector data practitioners already recognizes this palette and logo. Keeping both
+lets the anniversary framing carry the "what's changed" weight instead of a rebrand
+competing with it.
 
-Magenta carries the hero role — warm-cool, distinctly **not** MORPC's blue / green /
-light-blue — with Indigo-violet as its cooler counterpart for structure. Gold is the one
-deliberate temperature break: the "forward motion" accent for CTAs and the plotted trend
-line, chosen for AAA contrast on dark so it always reads as the thing to act on.
+Structurally, the palette is a cool blue spine (Dark Blue → Blue) with two warmer-leaning
+accents (Teal, Green) that share enough saturation to read as one family. Dark Blue does the
+architecture (headlines, bands, footers) while Blue carries anything interactive, so
+"structural" and "clickable" never collide. Teal and Green are held back for accent duty,
+which keeps a single CTA color obvious on any given page.
 
-The data-viz set adds Rose and Rust to widen the hue range without introducing blue or
-green, keeping multi-series charts distinguishable for color-blind readers even on a dark
-canvas.
+The added neutrals do the work the four brand colors can't. The dark muted black
+(`#171C21`) is warmer and softer than pure black, so long-form body copy on Fog reads
+without the harsh edge of `#000000`, and it doubles as the reversed hero surface. The very
+light grey (`#F2F4F6`) gives white cards something to sit on, which is what makes a
+document-heavy site (agenda, CFP, sponsor tiers) scan as sections rather than one wall.
+
+The accessibility ceiling is the honest constraint: Teal 500 and Green 500 are bright,
+mid-luminance colors that cannot carry text on light backgrounds. The 600–700 steps exist
+specifically to cover that, and the rules in §4 are the guardrail.
 
 ---
 
@@ -126,42 +178,40 @@ canvas.
 
 ### HEX list
 ```
-Signal Magenta     #CB4FC0
-Route Indigo       #6153C4
-Plot Gold          #F6B93B
-Ink Void           #221C2B
-Surface            #4A3F5C
-Cloud White        #F5F0F7
-Mist Gray          #948DA0
+Dark Blue          #073451
+Blue               #0977BC
+Teal               #00A79D
+Green              #7CB46A
 
-Rose               #F2607B
-Rust               #C96A3E
+Ink                #171C21
+Ink Soft           #2A3238
+Slate              #5F6B75
+Mist               #DDE2E7
+Fog                #F2F4F6
+White              #FFFFFF
 ```
 
 ### CSS custom properties
-See [`palette.css`](palette.css) for the complete token set (full 100–700 scales plus these
-semantic aliases):
+See [`palette.css`](palette.css) for the complete token set (full 100–700 scales, the
+data-viz palette, semantic aliases, and a `.dd-dark` block for reversed surfaces):
 
 ```css
 :root {
-  --dd-magenta-300: #E48CDA;
-  --dd-magenta-500: #CB4FC0;
-  --dd-magenta-600: #7A2F71;
-  --dd-indigo-300:  #9C8FE0;
-  --dd-indigo-500:  #6153C4;
-  --dd-indigo-600:  #443A8C;
-  --dd-gold-500:    #F6B93B;
-  --dd-gold-600:    #B8790F;
-  --dd-rose:        #F2607B;
-  --dd-rust:        #C96A3E;
-  --dd-ink-void:    #221C2B;
-  --dd-surface:     #4A3F5C;
-  --dd-cloud:       #F5F0F7;
-  --dd-mist:        #948DA0;
+  --dd-navy-500:  #073451;
+  --dd-blue-500:  #0977BC;
+  --dd-blue-600:  #07588B;  /* links on light */
+  --dd-teal-500:  #00A79D;
+  --dd-teal-600:  #007C74;  /* teal text on light */
+  --dd-green-500: #7CB46A;
+  --dd-green-700: #425F38;  /* green text on light */
+  --dd-ink:       #171C21;
+  --dd-slate:     #5F6B75;
+  --dd-mist:      #DDE2E7;
+  --dd-fog:       #F2F4F6;
 }
 ```
 
 ---
 
-*Source: Claude Design project `19813721-b03a-45cc-9964-61ad5e02f050`, file "Data Day 2027
-Palette - Magenta Signal (Dark)". Imported 2026-07-14.*
+*Core hexes sourced from the Data Day logo SVGs in `Design/logo/`. Palette rebuilt
+2026-07-21 after design review chose to retain the existing brand.*
